@@ -8,6 +8,26 @@ body
     
 }
 
+/* Some styling for the hyperlinks, mostly to just remove it so it keeps my CSS */
+a:link{
+    text-decoration: none;
+    color: rgb(182, 32, 34);    
+}
+
+a:visited {
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: underline;
+  }
+  
+a:active {
+    text-decoration: underline;
+  }
+
+
+
 .backgroundImage
 {
   position: absolute;
