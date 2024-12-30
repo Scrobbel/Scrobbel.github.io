@@ -28,13 +28,16 @@ a:active {
 
 
 
-.backgroundImage
+.background
 {
-  position: absolute;
-  filter: grayscale(100%);
-  width: 100%;
-  z-index: -1;
-  opacity: 0.3;
+  /*
+    position: absolute;
+    filter: grayscale(100%);
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background-size: cover;
+  */
 }
   
 /* Big text in middle of index */
@@ -63,6 +66,15 @@ a:active {
 .textHighlight
 {
     font-size: 19px;
+    font-weight: bold;
+    text-shadow: rgb(249, 249, 249) 2px 2px 2px;
+    color: rgb(182, 32, 34);    
+
+}
+
+.textHighlightHeading
+{
+    font-size: 21px;
     font-weight: bold;
     text-shadow: rgb(249, 249, 249) 2px 2px 2px;
     color: rgb(182, 32, 34);    
