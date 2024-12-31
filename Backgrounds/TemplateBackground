@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="../navBarSheet.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+                
+    <title>templateBackground</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="topNav">
+        <b>
+            Dantes Drakar och Demoner
+        </b>
+        <a href="../index.html">Startsida</a>
+        <a href="../urdstamman.html">Urdstämman</a>
+        <a href="../odelandet.html">Ödelandet</a>
+        <a href="../characterCreation.html">Karaktärsskapande</a>
+    </div>
+
+    <!-- Line break into breadtext-->
+    <div class="background">
+        
+        <br>
+        <div class="border">
+            <!-- Heading and flavor text-->
+            <div class="breadText">
+                <div class="subHead">
+                    Template Background
+                </div>
+                <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at hendrerit nisi. Suspendisse ut vulputate erat, vel interdum nibh. Fusce eget hendrerit neque. Morbi ac lorem ultrices, scelerisque elit a, scelerisque massa. Sed id tempor ex. Donec sed interdum nulla. In sollicitudin lacus in quam porttitor interdum. Quisque erat diam, pharetra non diam eu, euismod tempor risus. Suspendisse semper metus varius rutrum viverra. Fusce id sodales urna. Nullam euismod varius ligula, dapibus porttitor leo condimentum in. </i>
+                <br>
+            </div>
+
+            <!-- Profs and Equipment -->
+            <div class="breadText" style="text-align: left;">
+                <br>
+                <span class="textHighlightHeading">Skill Proficiencies:</span> 
+                <br>
+                <span class="textHighlightHeading">Tool Proficiencies:</span>
+                <br>
+                <span class="textHighlightHeading">Languages:</span>
+                <br>
+                <span class="textHighlightHeading">Equipment:</span>
+                <br>
+            </div>
+            <br>
+            <!-- Features-->
+            <div class="breadText" style="text-align: left;">
+                <div class="subHead" style="text-align: left;">
+                    Features
+                </div>
+                <div class="textHighlightHeading">Feature 1</div> 
+            </div>
+            <!-- Building a character, tables take up a lot of space HTML wise-->
+            <div class="breadText" style="text-align: left;">
+                <div class="subHead" style="text-align: left;">
+                    Building a 
+                </div>
+            Text goes here 
+                <table>
+                    <tr>
+                        <th style="width: 5%;"> d6  </th>
+                        <th style="width: 45%;"> Table 1 </th>
+                    </tr>
+                    <tr>
+                        <td> 1 </td>
+                        <td> Option 1 </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> Option 2 </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> Option 3 </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> Option 4 </td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <th style="width: 5%;"> d6  </th>
+                        <th style="width: 45%;"> Table 2 </th>
+                    </tr>
+                    <tr>
+                        <td> 1 </td>
+                        <td> Option 1 </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> Option 2 </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> Option 3 </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> Option 4 </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

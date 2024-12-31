@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="../navBarSheet.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+                
+    <title>Märkt av Skarn</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="topNav">
+        <b>
+            Dantes Drakar och Demoner
+        </b>
+        <a href="../index.html">Startsida</a>
+        <a href="../urdstamman.html">Urdstämman</a>
+        <a href="../odelandet.html">Ödelandet</a>
+        <a href="../characterCreation.html">Karaktärsskapande</a>
+    </div>
+
+    <!-- Line break into breadtext-->
+    <div class="background">
+        
+        <br>
+        <div class="border">
+            <!-- Heading and flavor text-->
+            <div class="breadText">
+                <div class="subHead">
+                    Märkt av Skarn
+                </div>
+                <i>
+                    Rösten av Metall, vår närmsta koppling till Dagen av Tystnad, är en symbol av krig och våld, för vad finns det att minnas från den tiden förutom blodbadet? De som blir märkta av Skarn tvingas vara vandrande monument till misstagen och synderna som begicks för så många år sedan; Hemska vapen från det sista kriget följer deras fotsteg, drömmar upptas med visioner från fallna soldater, händer alltid täckta av sot från krutvapen.
+                    <br>
+                    För många är denna skuld för mycket att bära, men för andra tappra äventyrare är det en välsignelse, ett märke som manar dem till att fortsätta framåt. 
+                </i>
+                <br>
+            </div>
+
+            <!-- Profs and Equipment -->
+            <div class="breadText" style="text-align: left;">
+                <br>
+                <span class="textHighlightHeading">Skill Proficiencies:</span> Your choice of History or Survival
+                <br>
+                <span class="textHighlightHeading">Tool Proficiencies:</span> Gunsmith Tools, vehicles (war engines)
+                <br>
+                <span class="textHighlightHeading">Languages:</span> Deep Speech (understand, cannot speak)
+                <br>
+                <span class="textHighlightHeading">Equipment:</span> A trinket from the last war (see further below), a broken gunpowder-based weapon, set of soldier clothes, a pouch containing 2 gp
+                <br>
+            </div>
+            <br>
+            <!-- Features-->
+            <div class="breadText" style="text-align: left;">
+                <div class="subHead" style="text-align: left;">
+                    Features
+                </div>
+                <div class="textHighlightHeading">Skarn Witch</div> 
+                As all witches, you are marked by the Urdvoices, granting you unique abilities. You gain the Witch Mark - Skarn feat. In addition, you know the location of - if any exist - shrines dedicated to Skarn in your place of origin.
+            </div>
+            <!-- Building a character, tables take up a lot of space HTML wise-->
+            <div class="breadText" style="text-align: left;">
+                <div class="subHead" style="text-align: left;">
+                    Building a Witch 
+                </div>
+                The witches of the Wastelands are as feared as they are revered. While many accept that they can do good, the presence of the Urdvoices can be enough to make someone uneasy. Some witches are marked while they are young, seemingly inexplicably, while others commit some deed which grants them their mark. Think of how your character got their mark, what they feel about it and the connected deity, as well as how the deity influences their personality. 
+                <table>
+                    <tr>
+                        <th style="width: 5%;"> d4  </th>
+                        <th style="width: 45%;"> Skarn Witch Personality Traits </th>
+                    </tr>
+                    <tr>
+                        <td> 1 </td>
+                        <td> The smell of fired gunpowder makes me giddy, much to the dismay of others. </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> I collect old weapon parts to stop others from re-creating the horrific weapons of war.   </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> I see my mark as a mission to bring about order in this land.</td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> The mark I bear is a curse, a reason to despise Skarn. I will do everything I can to get rid of it.</td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <th style="width: 5%;"> d6  </th>
+                        <th style="width: 45%;"> Table 2 </th>
+                    </tr>
+                    <tr>
+                        <td> 1 </td>
+                        <td> A full-covering helmet from a fallen soldier bearing religious imagery.</td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> A prayerbook with hymns and verses, belonging to a warrior priest.</td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> A piece of tattered cloth, once bearing the flag of a nation. </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> The hilt of a sword that once marked a grave. </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
