@@ -59,9 +59,9 @@ a:active {
 .subHead
 {
     font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; ;
-    text-shadow: rgb(173, 173, 173) 1px 1px 1px;
+    text-shadow: rgba(212, 207, 199, 0.7) 1px 2px 2px;
     font-weight: bold;
-    color:  #625d10;
+    color:  #2f2c0a;
     font-size: 27px;
     text-align: center;
     margin-top: 0;
