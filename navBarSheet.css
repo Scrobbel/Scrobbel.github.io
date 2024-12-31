@@ -1,6 +1,6 @@
 /* Everything after this is the navigation bar */
 .topNav{
-    background-color: #800020;
+    background-color: #413018;
     overflow: hidden;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -20,6 +20,7 @@
     text-decoration: none;
     font-size: 23px;
     position: relative;
+    text-shadow: #2f3517 1px 1px 10px;
 
 }
 
@@ -72,6 +73,7 @@
     line-height: 35px;
     text-decoration: none;
     font-size: 30px;
+    text-shadow: #3f4c0c 1px 1px 10px;
 
 }
 
