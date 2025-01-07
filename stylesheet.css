@@ -2,7 +2,7 @@
 body
 {
     background-color:  rgb(24, 28, 8, 1);
-    /*background-image: url("/images/Lilaögda\ Nattslöjan.png"); Edit this once I have an actual background*/
+    background-image: url(Images/backgroundTest.png);
     background-size: cover;
     background-blend-mode: lighten;
     margin: 0;
@@ -29,22 +29,8 @@ a:active {
     text-decoration: underline;
   }
 
-
-
-.background
-{
-  z-index: -1;
-  /*
-    position: absolute;
-    filter: grayscale(100%);
-    width: 100%;
-    z-index: -1;
-    opacity: 0.3;
-    background-size: cover;
-  */
-}
   
-/* Big text in middle of index */
+/* Big header text */
 .headText 
 {
     font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; ;
@@ -56,6 +42,7 @@ a:active {
     
 }
 
+/* Smaller header text */
 .subHead
 {
     font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; ;
@@ -68,6 +55,7 @@ a:active {
     
 }
 
+/* We have 2 textHighlight, one is used in-line, the other - textHighlightHeading - is to create small headers */
 .textHighlight
 {
     font-size: 19px;
@@ -86,6 +74,7 @@ a:active {
 
 }
 
+/* Generic breadtext div, it is used basically within every .border div */
 .breadText
 {   
     font-size: 19px;
@@ -94,6 +83,45 @@ a:active {
     
 }
 
+
+/* This makes the small images used in for example races. It is only supported on desktop (see "display none" further down) */
+.desktopImage img {
+  
+  max-width:500px;
+  max-height:500px;
+  width: auto;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+.desktopImage img {
+  display: none;
+}
+
+}
+
+/* The text box seen on every page. It looks super clunky, because it is.*/
+.border 
+{
+    border: 5px double #5f2920;
+    border-radius: 5px;
+    background-color: rgb(222, 206, 180,0.7);
+    padding: 4px;
+    flex-direction: column;
+
+    /* This is all just to get the damn box centered and correctly bordered */
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    max-width: 75%;
+    
+}
+
+/* All this is the table used in backgrounds. It makes it so every-other heading is a different color, improves readability */
 table 
 {
     border: 5px double #5f2920;
@@ -113,26 +141,3 @@ th
   
 }
 
-.border 
-{
-    border: 5px double #5f2920;
-    border-radius: 5px;
-    background-color: rgb(222, 206, 180,0.7);
-    
-    /* #c3aa92 Try this color later 
-    #ccc4b1*/
-   
-    padding: 4px;
-    flex-direction: column;
-
-    /* This is all just to get the damn box centered and correctly bordered */
-    
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-    max-width: 75%;
-    
-}
