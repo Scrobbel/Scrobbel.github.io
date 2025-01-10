@@ -46,9 +46,11 @@ a:active {
 .subHead
 {
     font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; ;
-    text-shadow: 1px 1px 1px rgb(15, 32, 8);
+    text-shadow: 
+    1px 1px 2px black,
+    0 0 0.2em black;
     font-weight: bold;
-    color:  #48441d;
+    color:  #a19d6b;
     font-size: 27px;
     text-align: center;
     margin-top: 0;
@@ -58,10 +60,10 @@ a:active {
 /* Even smaller */
 .subHead2
 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  text-shadow: rgb(102, 98, 98) 1px 1px 1px;
-  color: #413018; 
+  text-shadow: rgb(180, 180, 180) 1px 1px 1px;
+  color: #260303; 
     
 }
 
@@ -79,15 +81,15 @@ a:active {
 {
     font-size: 21px;
     font-weight: bold;
-    text-shadow: rgb(102, 98, 98) 1px 1px 1px;
-    color: #413018;    
+    text-shadow: rgb(180, 180, 180) 1px 1px 1px;
+    color: #260303;    
 
 }
 
 /* Generic breadtext div, it is used basically within every .border div */
 .breadText
 {   
-    font-size: 19px;
+    font-size: 20px;
     text-shadow: rgb(200, 200, 200) 1px 1px 3px;
     line-height: 1.3;
     
@@ -115,7 +117,8 @@ a:active {
 {
     border: 5px double #5f2920;
     border-radius: 5px;
-    background-color: rgb(222, 206, 180,0.75);
+    background-color: rgb(222, 206, 180,0.8);;
+    /*rgb(222, 206, 180,0.8);*/
     padding: 4px;
     flex-direction: column;
 
@@ -129,6 +132,15 @@ a:active {
     width: fit-content;
     max-width: 75%;
     
+}
+
+i
+{
+  text-shadow: 
+  rgb(221, 205, 205) 1px 1px 1px,
+  rgb(236, 213, 213) -1px -1px 1px;
+  color: #1e1616; 
+  
 }
 
 /* All this is the table used in backgrounds. It makes it so every-other heading is a different color, improves readability */
