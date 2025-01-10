@@ -55,6 +55,16 @@ a:active {
     
 }
 
+/* Even smaller */
+.subHead2
+{
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: rgb(102, 98, 98) 1px 1px 1px;
+  color: #413018; 
+    
+}
+
 /* We have 2 textHighlight, one is used in-line, the other - textHighlightHeading - is to create small headers */
 .textHighlight
 {
@@ -140,5 +150,11 @@ th
   text-shadow: none;
   padding: 5px;
   
+}
+
+td
+{
+  padding: 2px;
+  font-size: 17px;
 }
 
