@@ -83,6 +83,7 @@ a:active {
     font-weight: bold;
     text-shadow: rgb(180, 180, 180) 1px 1px 1px;
     color: #260303;    
+    margin-top: 10px;
 
 }
 
@@ -94,6 +95,8 @@ a:active {
     line-height: 1.2;
     
 }
+
+
 
 
 /* This makes the small images used in for example races. It is only supported on desktop (see "display none" further down) */
@@ -143,8 +146,26 @@ i
   
 }
 
+/* This table is for the spell list */
+table.spellList {
+
+    border: 5px double #5f2920;
+    border-radius: 5px;
+    background-color: rgb(222, 206, 180,0.7);
+    width: 100%;
+    text-align: left;
+
+}
+
+table.spellList td
+{
+  border: 1px solid #5f2920;
+  padding: 2px;
+  font-size: 17px;
+}
+
 /* All this is the table used in backgrounds. It makes it so every-other heading is a different color, improves readability */
-table 
+table.a
 {
     border: 5px double #5f2920;
     border-radius: 5px;
@@ -153,9 +174,9 @@ table
     text-align: left;
 }
 
-tr:nth-child(even) {background-color: rgba(212, 207, 199, 0.7);}
+table.a tr:nth-child(even).a {background-color: rgba(212, 207, 199, 0.7);}
 
-th 
+table.a th
 {
   background-color: #5f2920;
   color: white;
@@ -164,7 +185,7 @@ th
   
 }
 
-td
+table.a td
 {
   padding: 2px;
   font-size: 17px;
