@@ -153,15 +153,24 @@ table.spellList {
     border-radius: 5px;
     background-color: rgb(222, 206, 180,0.7);
     width: 100%;
-    text-align: left;
+    text-align: center;
 
 }
 
 table.spellList td
 {
   border: 1px solid #5f2920;
-  padding: 2px;
+  padding: 5px;
   font-size: 17px;
+  
+}
+
+table.spellList a 
+{
+  font-size: 17px;
+  font-style: italic;
+  text-shadow: #fffbf5 2px 2px 5px;
+  color: #a30606;    
 }
 
 /* All this is the table used in backgrounds. It makes it so every-other heading is a different color, improves readability */
