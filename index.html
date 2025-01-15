@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="navBarSheet.css">
-    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script> 
-        $(function(){
-            
-          $("#includedContent").load("../navBarReference.html"); 
-        });
-    </script> 
     
+    <!-- Index needs to make the navbar from scratch instead of importing it, annoying but is what it is -->
+    <script>
+        /* This gets for all the non-dropdown elements */
+        document.querySelectorAll(".topNav a").forEach((link) => {
+            if (link.href === window.location.href) {
+                link.classList.add("active");
+                link.setAttribute("aria-current", "page");
+            }
+        });
+        
+        /* This one is for dropdowns under the buttons */
+        document.querySelectorAll(".dropdown a").forEach((link) => {
+            if (link.href === window.location.href) {
+                link.classList.add("active");
+                link.setAttribute("aria-current", "page");
+            }
+        });
+    </script>
+
     <!-- Fonts -->
     <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
-                
+
     <title>Urdstämman</title>
 </head>
+
 <body>
 
-    <!-- Navbar, imported using JQuery above -->
-    <div id="includedContent"></div>
+    <!-- Navbar -->
+    <div class="topNav">
+        <b>
+            Dantes Drakar och Demoner
+        </b>
+        <a href="../index.html">Startsida</a>
+        <a href="../urdstamman.html">Urdstämman</a>
+        <a href="../CharacterCreation/index.html">Karaktärsskapande</a>
+        <div class="dropdown">
+            <button class="dropbtn"> <a href="../Wasteland/index.html">Ödelandet</a> &#8595;</button>
+            <div class="dropdown-content">
+                <a href="../Wasteland/War.html">Det Sista Kriget</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"> Övrigt &#8595;</button>
+            <div class="dropdown-content">
+                <a href="../Wasteland/index.html">Övrigt</a>
+            </div>
+        </div>
+
+    </div>
 
     <!-- Line break into breadtext-->
     <br>
@@ -36,10 +69,12 @@
         <div class="breadText">
             <i>Hundratals bönder skyndar sig hem vid skymning för att undvika Nattfarorna av Tegrid</i>
             <br>
-            <i>En häxa markerad av Skarn vandrar Ödelandet, i vardera hand håller hon minnen från soldaterna som föll i det
+            <i>En häxa markerad av Skarn vandrar Ödelandet, i vardera hand håller hon minnen från soldaterna som föll i
+                det
                 sista kriget</i>
             <br>
-            <i>Djupt under en kyrka försöker en präst förhandla med en avatar av tid samtidigt som hans byn ovan blir till
+            <i>Djupt under en kyrka försöker en präst förhandla med en avatar av tid samtidigt som hans byn ovan blir
+                till
                 aska</i>
             <br>
         </div>
@@ -52,16 +87,20 @@
             </div>
             Sju generationer sedan begick folket av Vallone det yttersta och värsta sveket: De vände sig mot sina gudar.
             <br>
-            Det sägs att ett världskrig på kontinenten av Lamaign bröt ut, en konflikt ledd av en numera-okänd kungafamilj. De hävdade
+            Det sägs att ett världskrig på kontinenten av Lamaign bröt ut, en konflikt ledd av en numera-okänd
+            kungafamilj. De hävdade
             att gudarna hade svikit dem, att världen höll på gå under och att gudarna gjorde inget åt det.
-            Andra påstod att familjen var från vettet, eller att gudarna aldrig var skyldiga oss något. Snabbt blev dagar
-            till månader, månader blev till år, en kapprustning ledde till mer magisk och teknologisk framgång än någonsin
+            Andra påstod att familjen var från vettet, eller att gudarna aldrig var skyldiga oss något. Snabbt blev
+            dagar
+            till månader, månader blev till år, en kapprustning ledde till mer magisk och teknologisk framgång än
+            någonsin
             förr, allt för
             att fortsätta den glupska maskinen av krig.
             <br>
             Få minns vad som orsakade vändpunkten, men vid slutet var det hela världen som stred emot gudarna,
             entiteter som aldrig behövt förstå sig på rädsla blev plötsligen bemötta av summan av
-            civlisations framsteg, och i deras sista stunder kände de <span style="font-style: italic;">hat</span> för sina
+            civlisations framsteg, och i deras sista stunder kände de <span style="font-style: italic;">hat</span> för
+            sina
             förr-trogna följare.
             Dagen gudarna dräptes blev kallad <br><span class="textHighlight">Dagen av Tystnad.</span><br>
         </div>
@@ -74,22 +113,25 @@
             folket inuti dem tillintetgjorda. Nu står endast ruinerna
             av den tidigare civilisationen kvar, deras historia omöjlig att tolka.
             <br>
-            Mindre byar klarade sig oskadda, och även i ruinerna var vissa skonade. Ingen vet vad det var som lyckades döda
+            Mindre byar klarade sig oskadda, och även i ruinerna var vissa skonade. Ingen vet vad det var som lyckades
+            döda
             dem, vissa legender säger att
-    
+
             De började försöka återbygga det som var förlorat, men gudadråp görs inte konsekvensfritt;
             <span style="font-style: italic;">Urdstämman</span>, där gudarna var symboler av prakt och harmoni var dessa
             utomjordiska varelser avatarer av rädsla och elände.
             <br><br>
-            Nu vandrar få Ödelandet. De flesta har accepterat att de är fångar i Urdstämmans fängelse, många bär ett hat för
+            Nu vandrar få Ödelandet. De flesta har accepterat att de är fångar i Urdstämmans fängelse, många bär ett hat
+            för
             sina medmänniskor och en rädsla för världen utanför sina byar,
             men allt är inte förlorat, för så länge människan har levt på Vallone har det existerat en tidlös och
             oförstörbar sanning: <br>Vi ger <span class="textHighlight">aldrig</span> upp.
         </div>
     </div>
     </div>
-    
+
 
 
 </body>
+
 </html>
