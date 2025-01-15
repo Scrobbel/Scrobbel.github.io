@@ -1,4 +1,4 @@
-/* Everything after this is the navigation bar */
+/* The full bar */
 .topNav{
     background-color: #413018;
     overflow: hidden;
@@ -11,6 +11,7 @@
     float: right;
 }
 
+/* Each "button" element */
 .topNav a{
     
     color: #d7d2d2;
@@ -21,9 +22,10 @@
     font-size: 23px;
     position: relative;
     text-shadow: #2f3517 1px 1px 10px;
+    float: left;
 
 }
-
+/* The slide effect when you hover */
 .topNav a::after {
     content: '';
     position: absolute;
@@ -37,7 +39,7 @@
     transition: transform 0.25s ease-out;
 }
 
-
+/* The slide effect when you hover */
 .topNav a:hover::after {
     text-shadow: rgb(0, 0, 0) 1px 1px 4px;
     transition: all 0.3s ease;
@@ -65,6 +67,7 @@
     
 }
 
+/* The headline element */
 .topNav b {
     color: #f2f2f2;
     text-align: center;
@@ -73,9 +76,59 @@
     text-decoration: none;
     font-size: 30px;
     text-shadow: #3f4c0c 1px 1px 10px;
+    float: left;
 
 }
 
+/* Dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    float: none;
+    color: #d7d2d2;
+    text-align:right;
+    padding: 12px 15px;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 23px;
+    text-shadow: #2f3517 1px 1px 10px;
+
+    border: none;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
 /* CSS for mobile devices */
