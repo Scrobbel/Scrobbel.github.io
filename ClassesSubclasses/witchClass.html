@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../stylesheet.css">
     <link rel="stylesheet" href="../navBarSheet.css">
+    <script> 
+        $(function(){
+          $("#includedContent").load("../navBarReference.html"); 
+        });
+    </script> 
 
     <!-- Fonts -->
     <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
@@ -14,16 +19,8 @@
 
 <body>
 
-    <!-- Navbar -->
-    <div class="topNav">
-        <b>
-            Dantes Drakar och Demoner
-        </b>
-        <a href="../index.html">Startsida</a>
-        <a href="../Urdvoices/index.html">Urdstämman</a>
-        <a href="../Wasteland/index.html">Ödelandet</a>
-        <a href="../characterCreation.html">Karaktärsskapande</a>
-    </div>
+    <!-- Navbar, imported using JQuery above -->
+    <div id="includedContent"></div>
 
     <!-- Line break into breadtext-->
 
@@ -598,7 +595,8 @@
                 rest you apply any amount of Rituals you know to you.
                 <br>
                 Every Ritual has an Effect, Curse and Activation section. The effect is its passive ability, curse the
-                downside, and activation is a powerful one time effect. After an activation, the Ritual effect ends until it is applied
+                downside, and activation is a powerful one time effect. After an activation, the Ritual effect ends
+                until it is applied
                 again.
                 <br>
                 A list of Rituals can be found <span class="textHighlight"><a
@@ -650,17 +648,23 @@
             <!-- Urd Malison -->
             <div class="breadText" style="text-align: left;">
                 <div class="textHighlightHeading">Urd Malison</div>
-                At 7th level you learn a powerful curse unique to witches: The Urd Malison, a manifestation of you the Urdvoices. Once per Long Rest you can
-                activate your Urd Malison as an Action, creating an aura of eldritch energy extending 10 ft. out from you. The Malison lasts for 1 minute or until you become incapacitated, during which you have the following effects:
+                At 7th level you learn a powerful curse unique to witches: The Urd Malison, a manifestation of you the
+                Urdvoices. Once per Long Rest you can
+                activate your Urd Malison as an Action, creating an aura of eldritch energy extending 10 ft. out from
+                you. The Malison lasts for 1 minute or until you become incapacitated, during which you have the
+                following effects:
                 <ul>
                     <li>
-                        Whenever a creature starts it turn within the aura you can force them to make a Wisdom saving throw. On a failure they are frightened until the end of their turn.
+                        Whenever a creature starts it turn within the aura you can force them to make a Wisdom saving
+                        throw. On a failure they are frightened until the end of their turn.
                     </li>
                     <li>
-                        Whenever you hit a creature inside the aura with a weapon attack, it deals an additional necrotic damage equal to your Witch Modifier.
+                        Whenever you hit a creature inside the aura with a weapon attack, it deals an additional
+                        necrotic damage equal to your Witch Modifier.
                     </li>
                     <li>
-                        Your movement speed is increased by 10 ft., and hostiles within the aura have theirs reduced by 10 ft..
+                        Your movement speed is increased by 10 ft., and hostiles within the aura have theirs reduced by
+                        10 ft..
                     </li>
                 </ul>
                 At 11th and 14th level you get an additional use of this ability per Long Rest.
@@ -670,14 +674,15 @@
             <!-- Swift Rituals -->
             <div class="breadText" style="text-align: left;">
                 <div class="textHighlightHeading">Swift Rituals</div>
-                At 18th level, your Rituals are such second nature that you can swiftly apply them. Whenever you complete a Short Rest you can apply any amount of Rituals you know.
+                At 18th level, your Rituals are such second nature that you can swiftly apply them. Whenever you
+                complete a Short Rest you can apply any amount of Rituals you know.
             </div>
             <br>
 
             <!-- Urdvoices Chosen -->
             <div class="breadText" style="text-align: left;">
                 <div class="textHighlightHeading">Urdvoices Chosen</div>
-                
+
             </div>
             <br>
 
@@ -700,8 +705,6 @@
         </div>
     </div>
     </div>
-
-
 </body>
 
 </html>

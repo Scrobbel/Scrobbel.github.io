@@ -5,18 +5,49 @@
     </b>
     <a href="../index.html">Startsida</a>
     <a href="../urdstamman.html">Urdstämman</a>
-    <div class="dropdown">
-        <button class="dropbtn"> Ödelandet </button>
-        <div class="dropdown-content">
-            <a class="active" href="../Wasteland/index.html">Ödelandet</a>
-        </div>
-        
-    </div>
     <a href="../CharacterCreation/index.html">Karaktärsskapande</a>
     <div class="dropdown">
-        <button class="dropbtn"> Övrigt</button>
+        <button class="dropbtn"> <a href="../Wasteland/index.html">Ödelandet</a> &#8595;</button>
         <div class="dropdown-content">
-            <a class="active" href="../Wasteland/index.html">Övrigt</a>
+            <a href="../Wasteland/index.html">Startsida</a>
         </div>
     </div>
+    <div class="dropdown">
+        <button class="dropbtn"> Övrigt &#8595;</button>
+        <div class="dropdown-content">
+            <a href="../Wasteland/index.html">Övrigt</a>
+        </div>
+    </div>
+    
 </div>
+
+<!-- We use a some scripts to highlight the current site we're on -->
+<script>
+    /* This gets for all the non-dropdown elements */
+    document.querySelectorAll(".topNav a").forEach((link) => {
+        if (link.href === window.location.href) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+    
+    /* This one is for dropdowns under the buttons */
+    document.querySelectorAll(".dropdown a").forEach((link) => {
+        if (link.href === window.location.href) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+    
+    /* Here is for the actual button itself */
+    var btns = document.querySelectorAll(".dropdown .dropbtn");
+
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    } 
+    
+</script>

@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../stylesheet.css">
     <link rel="stylesheet" href="../navBarSheet.css">
+    <script> 
+        $(function(){
+          $("#includedContent").load("../navBarReference.html"); 
+        });
+    </script> 
 
     <!-- Fonts -->
     <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
@@ -14,19 +19,12 @@
 
 <body>
 
-    <!-- Navbar -->
-    <div class="topNav">
-        <b>
-            Dantes Drakar och Demoner
-        </b>
-        <a href="../index.html">Startsida</a>
-        <a href="../Urdvoices/index.html">Urdstämman</a>
-        <a href="../Wasteland/index.html">Ödelandet</a>
-        <a href="../characterCreation.html">Karaktärsskapande</a>
-    </div>
-    <br>
+    <!-- Navbar, imported using JQuery above -->
+    <div id="includedContent"></div>
+    
 
     <!-- Beginning of text -->
+    <br>
     <div class="border">
         <div class="headText">
             List of Hexes
