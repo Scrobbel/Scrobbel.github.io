@@ -1,52 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../stylesheet.css">
     <link rel="stylesheet" href="../navBarSheet.css">
     <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script> 
-        $(function(){
-          $("#includedContent").load("../navBarReference.html"); 
+    <script>
+        $(function () {
+            $("#includedContent").load("../navBarReference.html");
         });
-    </script> 
-    
+    </script>
+
     <!-- Fonts -->
     <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
-                
+
     <title>Urdstämman</title>
 </head>
+
 <body>
 
     <!-- Navbar, imported using JQuery above -->
     <div id="includedContent"></div>
 
     <!-- Line break into breadtext-->
-    <div class="background">
-        <br>
-        <div class="headText">
-            Urdstämman
-        </div>
-        <div class="subHead">
-            De Nya Gudarna
-        </div>
-        <br>
-            <div class="border">
-                <div class="breadText">
-                    <div class="subHead">Överblick</div>
-                </div>
-                <!-- Intro -->
-                <div class="breadText">
-                    <i style="font-size: 18px;">
-                        Landet gjordes gudlöst på Dagen av Tystnad, men det tog inte länge förrän våra nya mästare introducerade sig: Urdstämman, åtta inkräktare från en undangömd värld.
-                        Deras närvaro fördärvade landet, utplånade alla nationer, krossade städer som en fot mot myra. 
-                        I varje hörn av världen kan deras påverkan kännas, på ett sådant vis att man ifrågasätter om det verkligen fanns en värld innan Urdstämman.
-                    </i>
-                    
-                    <br><br><br><br><br>
+
+    <br>
+    <div class="headText">
+        Urdstämman
+    </div>
+    <div class="subHead">
+        De Nya Gudarna
+    </div>
+    <br>
+    <div class="border">
+        <!-- Intro -->
+        <div class="breadText">
+            <div class="breadText">
+                <div class="subHead">Överblick</div>
+            </div>
+            <div class="breadText">
+                <i style="font-size: 18px;">
+                    Landet gjordes gudlöst på Dagen av Tystnad, men det tog inte länge förrän våra nya mästare
+                    introducerade sig: Urdstämman, åtta inkräktare från en undangömd värld.
+                    Deras närvaro fördärvade landet, utplånade alla nationer, krossade städer som en fot mot myra.
+                    I varje hörn av världen kan deras påverkan kännas, på ett sådant vis att man ifrågasätter om det
+                    verkligen fanns en värld innan Urdstämman.
+                </i>
+            </div>
+            <div class="breadText">
+                Varje "röst" i Urdstämman representerar en konstant sanning på Vallone, en oändlig närvaro som konstant
+                känns av i livet.
+                Denna sida ger en kort överblick på varje röst, men väldigt mycket är fortfarande okänt eller
+                missförstått om dem. Nästan allt som världen vet om Urdstämman kommer från Urdstämmans "utvalda": <span
+                    class="textHighlight"><a href="../People/witches.html">Häxor</a></span>.
+                Individer som bär ett märke från en av Urdstämmans Röster.
+                <br>
+                De är presenterade i alfabetisk ordning.
+                Bakgrunden på alla sidor - hjulet med åtta eker - visar symbolen för varje röst, klicka <span
+                    class="textHighlight"><a href="../Images/background.png">här</a></span> för att se den.
+                Symbolen på toppen är alltså den första rösten i Urdstämman i denna lista och fortsätter sedan medsols.
             </div>
         </div>
+
+        <!-- Faust -->
+        <br>
+        <div class="breadText">
+            <div class="breadText">
+                <div class="subHead">Faust, Rösten av De Tonlösa</div>
+            </div>
+            <div class="breadText">
+                <i style="font-size: 18px;">
+                    Den döda riddaren som dyrkas och fruktas av äventyrare, Faust, Rösten av De Tonlösa.
+                    Konstant resandes över Ödelandet, de som sett Faust säger att de bär en vit mask med en näbb lik en fågel med gravstenar som växer
+                    från dess kropp, ridandes på en sjuklig häst som omöjligen borde kunna stå upp, mycket mindre gallopera.
+                </i>
+            </div>
+            <div class="breadText">
+                De äventyrare som blir vilseledda i Djupskogarna eller faller till Nattfarorna får inte nåden av en
+                snabb död, istället
+                blir de en <i>Tonlös</i>, en förlängning av Faust själv. Deras kroppar förvandlas för att likna
+                metallisk rustning, skulpterad som om de vuxit organiskt. De vandrar Ödelandet sökandes efter andra
+                äventyrare, oftast för att släcka
+                deras blodtörst,
+                men ibland för att få känna värmen av kamratskap igen.
+                <br>
+                <br>
+                När en Tonlös har vandrat länge nog, när deras metalliska kropp börjar ge upp, undergår de en process
+                som kallas för <i>Härdning</i>. De stelnar och blir till en staty, oftast i en sittandes position, och
+                all magi
+                som höll dem levande blir återigen en del av Faust. Det varierar vilt hur länge detta kan ta, det beror
+                mycket
+                på vad deras känslor och ånger var innan de blev Tonlösa.
+            </div>
+        </div>
+
+        <!-- Gård -->
+        <br>
+        <div class="breadText">
+            <div class="breadText">
+                <div class="subHead">Gård, Rösten av Stas</div>
+            </div>
+            <div class="breadText">
+                <i style="font-size: 18px;">
+                    En av de få i Urdstämman som går att resonera med, Gård, Rösten av Stas. 
+                    De är klädda som en präst från en förlorad panteon med ett groteskt huvud täckt i ögon som hålls upp av flertal händer, som om gamla dyrkare 
+                    än försöker vörda sin gamla gud. Det är sällan folk ser Gård i person, men spår av dem kan enkelt hittas i gamla tempel eller platser av helgedom.
+                    <br><br>
+                    Gård är en entitet som vill hålla världen stilla; Ruinerna från den gamla världen är i ett fast tillstånd av förfall, och så länge
+                    de är orörda kommer det fortsätta att vara så. På samma vis stoppar Gård världen från att utvecklas, 
+                    folk från de tidigare generationerna försökte återbygga det som var förlorat, men varenda gång de
+                    närmade sig framsteg förvandlades allt till aska.
+                </i>
+            </div>
+            <div class="breadText">
+                
+                <br>
+                <br>
+                
+            </div>
+        </div>
+
+        <!-- Namn -->
+        <br>
+        <div class="breadText">
+            <div class="breadText">
+                <div class="subHead">Namn</div>
+            </div>
+            <div class="breadText">
+                <i style="font-size: 18px;">
+                    Smak
+                </i>
+            </div>
+            <div class="breadText">
+                
+                <br>
+                <br>
+                
+            </div>
+        </div>
+
+
+
+    </div>
     </div>
 </body>
+
 </html>
