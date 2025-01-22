@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="../navBarSheet.css">
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("../navBarReference.html");
+        });
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+    <title>Urdstämman</title>
+</head>
+
+<body>
+
+    <!-- Navbar, imported using JQuery above -->
+    <div id="includedContent"></div>
+
+    <!-- Line break into breadtext-->
+    <br>
+    <div class="headText">
+        Det Sisa Kriget
+    </div>
+    <div class="subHead">
+        Fallet av Vallone
+    </div>
+
+    <div class="border">
+        <div class="subHead">Det Sista Kriget</div>
+        <i style="font-size: 18px;">
+            “Fallet av Vallone är svårt att begripa sig på från utsidan. Vad krävs för att vända en hel
+            civilisation mot sina gudar? Att rikta sina vapen mot sina skapare?
+            Allt började med en kungafamilj - en viktig en, även när deras namn inte yttras - som avslöjade en
+            hemsk sanning:
+            En uråldrig gudinna vars existens länge hade enbart varit ett rykte vaknade. Hon tog först över
+            enstaka familjer, sen hela byar, till slut var hela nationer under hennes befäl, och hon var ute
+            efter blod.
+            Kungafamiljen bad deras dyrkade gudar om hjälp, de sa att om inget gjordes åt gudinnan skulle hela
+            Vallone falla.
+            Trots detta möttes deras böner och skri med tystnad, och det var i det ögonblicket som familjen svor
+            hämnd. Det var då världens öde var bestämt.”
+            <br>
+            -Fenn Locran, överlevande ärkemagiker från kriget
+        </i>
+
+    </div>
+</body>

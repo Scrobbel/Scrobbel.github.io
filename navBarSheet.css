@@ -27,33 +27,31 @@
     color: #f2f2f2;
   }
 
-/* The slide effect when you hover */
-.topNav a:hover::after, .dropbtn:hover::after {
-    text-shadow: rgb(0, 0, 0) 1px 1px 4px;
+/* This creates the white line and then hides it with scaleX(0) */
+.topNav > a::after, .dropbtn a::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    background-color: #d7d2d2;
+    transform-origin: center;
+    transition: 0.25s ease-out;
+    
+}
+
+/* This transforms the white line to its real size when you hover */
+.topNav > a:hover::after, .dropbtn a:hover::after {
     transition: all 0.3s ease;
     transform: scaleX(1);
     transform-origin: center;
     align-items: center;
-    
 }
 
-/* The final layer of the slide effect */
-.topNav a::after, .dropbtn::after {
-    content: '';
-    position: absolute;
-    width: 80%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 10%;
-    background-color: #d7d2d2;
-    transform-origin: center;
-    transition: transform 0.25s ease-out;
-    
-}
-
-/* To give the currently active site the black line */
-.topNav a.active::after, .dropbtn.active::after {
+/* To give the currently active site the white line */
+.topNav > a.active::after, .dropbtn a.active::after {
     color: #f2f2f2;
     content: '';
     position: absolute;
@@ -118,8 +116,6 @@
     text-shadow: #2f3517 1px 1px 10px;
 
 }
-
-
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
