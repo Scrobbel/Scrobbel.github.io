@@ -6,25 +6,6 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="navBarSheet.css">
 
-    <!-- Index needs to make the navbar from scratch instead of importing it, annoying but is what it is -->
-    <script>
-        /* This gets for all the non-dropdown elements */
-        document.querySelectorAll(".topNav a").forEach((link) => {
-            if (link.href === window.location.href) {
-                link.classList.add("active");
-                link.setAttribute("aria-current", "page");
-            }
-        });
-
-        /* This one is for dropdowns under the buttons */
-        document.querySelectorAll(".dropdown a").forEach((link) => {
-            if (link.href === window.location.href) {
-                link.classList.add("active");
-                link.setAttribute("aria-current", "page");
-            }
-        });
-    </script>
-
     <!-- Fonts -->
     <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
 
@@ -33,12 +14,12 @@
 
 <body>
 
-    <!-- Navbar -->
+    <!-- Navbar is created manually on the index, uses no javascript -->
     <div class="topNav">
         <b>
             Dantes Drakar och Demoner
         </b>
-        <a href="index.html">Startsida</a>
+        <a href="index.html" class="active">Startsida</a>
         <a href="Urdstämman/index.html">Urdstämman</a>
         <a href="CharacterCreation/index.html">Karaktärsskapande</a>
         <div class="dropdown">
