@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="../navBarSheet.css">
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("../navBarReference.html");
+        });
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+    <title>Häxor</title>
+</head>
+
+<body>
+
+    <!-- Navbar, imported using JQuery above -->
+    <div id="includedContent"></div>
+
+    <!-- Line break into breadtext-->
+    <br>
+    <div class="headText">
+        Häxor
+    </div>
+    <div class="subHead">
+        Urdstämmans Utvalda
+    </div>
+    <br>
+    <!-- Intro -->
+    <div class="border">
+        <div class="breadText">
+            <div class="subHead">Introduktion</div>
+        </div>
+        <div class="breadText">
+            Ordet <i>häxa</i> bär en väldigt unik definition i den nya världen: Någon som bär märket av Urdstämman. Namnet kom
+            från det panikslagna folket efter Dagen av Tystnad som skrek kätteri åt allt som hade med de nya gudarna att
+            göra. När kaoset hade lugnat var det tydligt att dessa häxor var lika kapabla för gott och ont som sin
+            gemene man, men namnet höll fast.
+            <br><br>
+            I “modern” tid är häxor fortfarande fruktade, för även de svagaste häxorna bär en gudomlig makt; Häxorna av
+            Skarn kan använda de hemska vapen som förr rev isär nationer vid behag medan de av Myrkvel kan tvinga på
+            hemska mutationer på sig själva - eller värre - på andra. Häxor får sitt märke oftast i barndomen av olika
+            skäl, och detta märke börjar omedelbart påverka kroppen och personligheten av häxan för att reflektera den
+            Urdstämma som markerade en. För många familjer ses detta som en förbannelse, som att barnet de var menade
+            att uppfostra nu blivit förvrängd och korrumperad av Urdstämman, och många gånger kastas barnet ut ur
+            familjen.
+            <br><br>
+            Häxor är hyfsat sällsynta, ungefär en på 500 får ett märke av Urdstämman. Bland äventyrare är denna siffra
+            självklart högre, då det sällan finns andra alternativ för en häxa utan familj.
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
