@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="../navBarSheet.css">
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("../navBarReference.html");
+        });
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+    <title>Witch of Skarn</title>
+</head>
+
+<body>
+
+    <!-- Navbar, imported using JQuery above -->
+    <div id="includedContent"></div>
+
+    <!-- Line break into breadtext-->
+
+    <br>
+    <div class="border">
+        <!-- Heading and flavor text-->
+        <div class="breadText">
+            <div class="headText">
+                Witch of Skarn
+            </div>
+            <i>
+                Rösten av Metall, vår närmsta koppling till Dagen av Tystnad, är en symbol av krig och våld, för vad
+                finns det att minnas från den tiden förutom blodbadet? De som blir märkta av Skarn tvingas vara
+                vandrande monument till misstagen och synderna som begicks för så många år sedan; Hemska vapen från det
+                sista kriget följer deras fotsteg, drömmar upptas med visioner från fallna soldater, deras händer alltid
+                täckta i sot från krutvapen.
+                <br>
+                För många är denna skuld för mycket att bära, men för andra tappra äventyrare är det en välsignelse, ett
+                märke som manar dem till att fortsätta framåt.
+            </i>
+            <br>
+        </div>
+
+
+        <!-- Class Features section-->
+        <div class="breadText" style="text-align: left;">
+
+            <!-- Witches Mark -->
+            <div class="breadText" style="text-align: left;">
+                <div class="subHead2">Witches Mark</div>
+                At 1st level, you have been marked by one of the Urdvoices, turning you into a witch. Your choice grants
+                you features at 1st, 3rd, 10th, and 15th level.
+                <br>
+                You choose between the following three options (witches bearing other marks exist in the world, but are
+                not yet playable):
+                <ul>
+                    <li>
+                        <span class="textHighlight">Gård, Voice av Stasis.</span> Witches of Gård are heralds of the new
+                        world, focusing on spells and manipulating the world.
+                    </li>
+                    <li>
+                        <span class="textHighlight">Skarn, Voice av Metal.</span> Witches of Skarn are living monuments
+                        to the last war, using firearms and other weapons of old.
+                    </li>
+                    <li>
+                        <span class="textHighlight">Tegrid, Voice av Night.</span> Witches of Tegrid are tamers of the
+                        beasts of night, morphing their body into powerful weapons.
+                    </li>
+                </ul>
+            </div>
+            <br>
+
+
+
+        </div>
+</body>
+
+</html>
