@@ -1,97 +1,119 @@
-html { 
-  background: url(Images/background.png) no-repeat center center fixed; 
-  background-size: cover;
+@font-face {
+    font-family: 'Luminari';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Luminari'), url('https://fonts.cdnfonts.com/s/14476/Luminari-Regular.woff') format('woff');
 }
 
-body
-{
+/* latin */
+@font-face {
+  font-family: 'IM Fell French Canon SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/imfellfrenchcanonsc/v22/FBVmdCru5-ifcor2bgq9V89khWcmQghEURY7H0czWhE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html {
+  /*
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAP1ElEQVR4nO1dCVfUShMtAQVERJBFUFQEWWQTZJGd92DQEVB4bIoCsqj//x98J8O9w6XojPopGiB1DichSSfd1bfWXsZAz83sFs4HzOypmZWYWTeuRf8/scI0LnebcIzKvw2UajOzaTP7JNceu2cqcSzH8b6ZLeOc72w3s3tm9g/+34mp4STKPpO6Fcn9L2b2KKZs1syaXZlBuT+GY8SjikDZFpzXuHv/mtmqmdWb2QTqeKqgoTNmcP5fTAUjmhMmKG2bWWng+i6O2skkMjGq4E2c38CxCsfXuFbryo6aWa8wih3WieMmGHVbykT3+sys1b2r0QEkoh4wTP/fxHlNAR75Nh55hgOU5q5HgLGX+EcZ/A1S46kNzFGKmPwKjVYpasO7I4bPA8nVuBc16quZ9YOpntbwf8bM7oARpHph3F0c2eH7QHq7u+9pSf737YnohZwTHATtmtxrttMUScsHufIY6DcAJ+LDupkdAPykqL5T/GcUokOVoWjqlhcaPvgvJMGk4R8Djepz5YqE+dtyrxFHMqlB7qlqiADzTv5/j/p9xvv3IWHLFqaXov5uBJ5YEnCS6R6Uq64sJYQS2S73IvV1zczKnNoulnPlNTs8xwBFyTgQr0jwpPpwu8BzBluwI2qlWfS4VxtTkAjSBymzENDRQ4HvKUJ3YKuuB55blXZkcNwEk+7j/684NkF99kLFDEGKvISE6hXVYUNsdDnaWOqeCZIi/a1TFQ1A+E25xgrV4aj3LGDIDKrLE9FBKe2SjukMlKFKiRh36O6N4Pg08B1l1B6O83KtSCRV0U7qh4ZQagWAlaZx/iXwjohWYq6foh783RC7oGgtg5pQUs9oXc7r5BrL8NlS6diHUibqBFIDJO8b7BKRuiXqQSmDTt2Ta95AG5wRCwDH0xOg2tMw+BDV7w3u7UPalkTF1UPaqD4JIErqIDq2BIY8A9Wbpyx0foljTpm8iC8/gvrIiH3xHUWiWH4TdM7K/WbnOdUChZXSCSaSO2KnyUsoiephBgwjbYGZe3j/hrN1Lbim7+t1774mQKJN+2rxRPe9SEBSgroPibTsxIQIeZrHh+gZPYx5jg2mO3gI+6MofOPKEDHs5F5UjrEAffdxcSGrwcwOV0elOeeE+PawLOszjKNXier5XSvgKMxCNVa76w0xzz+Tc69SB9WN9v70DBisFXsD5hc7l02Nk1bkOVTerp2lCjHy6rNT99J2MSZSlBKV9WAIO+8eDOYToL7MThOlyUvzA+lYdW425VjpytC+dKHDQhpiTjo6A3DTy1sGb8dEzW0zJulwL9JeVDeT7ql6X00wXGqkuqAfFQH7aDgpzjuhm/tCUDkhXpnBkNN1rHXqohnPV4t6K0f5Z85O+TYvuGv3Y5410fe30dbr0ine9qgaIq+nBXwm7naeiuAuNqHnKNK1+OCoMJ2M9QiMI0XPtnSsplp6XLAWivYpJc1OcqfkfnGg3Ct3Tje9S2xNJeIclXwC7yDwTjXABBFt43PxGrPyjHaAiXtOQ59vsyLjCMdvrnC5nLMyGbnWLzEC3UK1OZo3Uk/oqEAOqUU6yaciVnHskYZWBtxPorxBGKDe1wFQTsfiqwtG1QExqCFvL0jDkupR8h1BN30/8GyOfjXUZ3C3FlOhLYjxqDOOZALFNUJTuSvrG0OiyqP+XYT+1/dnBRy7UB2qhkLInxTtwGfVzSYIG+VaP9oyC0D8DoDHUhpl/0KUDff5Jcr4dA0BOSxtzAEo9Z5O6Fy9pwCxI9R5SnW4o/foyGrneBju3XLXKgU8zGJvCbgHIHXa7m2xpZPgb6N+bxHHCdxMM8An3//TGeAcfRDmq0rgIIo2iNKxCQasCDO9hBgY+FGQWiH6XfNfGg9l8bzep3/v0xRLYOpD11kGO9MPFTsmKoLqdg3oZrTtDf071LcX/CGgiPa4UVSt9wI0yUOAY8k9+ypgX3PUiIq+keDwkRu4og1gB5Q5L4RMV937DkxRokOwIJ0dIcurnEIGsyNgA4qdbauFapgUIBkYTORWIojchiSqkaV0jEENraHjaF99NvspePfegXgDUkTNMurc/4K0IhXZcg82umg3K4m4Wun9axKpD4rUsaOr8PxrMIAddlcibLqf62DyUCAl/gmJujrnNdXBfmkAVw40arT8RfJqdZCAQRknNwEcQdYkdrcLzPaaoUhUYZNITB142iF1o1eXd8nVSPU5cTPYF49wbfyAnSU2okL0v8+XabqlHWptUcoZkF0h/jxpUBq06FTHS7TBG1/q/tdgDLMPnZAsNbrqFX0UG/HZjYd0y5i72lmSpm8+oSMO4ax8ctJ8akDQZ0izcn4LlZ4GmliBJWdQiZo0UXlM/6+rfYougkvoo3l6KzNgpDKc9o9ZBZ8wLAPiPwSi6WVX1pyk0gniUAPBtCjS8lkA7MdyDCp8WJynHP/TjO3vz9hSm5RDUlqgZVoDo5XTIr05uow6mEwrhZTo2LZXGaRWgGku5j6JIFUVTHBWoiPUhSfQfScrQL8CULmO+RO+dTn09Q68IkrahtObbGRoSJSSQeYOFMqYCrULkyugppRho/hjdroH9aJ6ohRso/yi2AnWszkweqn2hXb1ECqKzssCvn0EYOf4yB7MWjztB5KJpCcuAqcEHMEWjKPndQbgqKisanFxx0QyiXg/gEbdvef0cj0azOj/hkjmtZjZLutwRgYQp9CGbsckNc1lFDRDux7Dw87AWLkf4m2T4eS8ZOhkA+aL6L5ug4GaDhkSG1EGEdwUQzoUUHsGCSkGg8ah3lYgQdrAQ2HKsFMlVBFkcjG+RwlrhDr8AqnUnFiptJlquAMAuh+ThVaGzgOcOqfXoAWoquk5VeFbt9A2tclqc6oC13J0VccfEjnAFjf5d0leeCgVeuVSG1RphdIdzPiGZjte+XlhSmkeK0F5rHRu1AlxblQXOqIlUH4A6vqOqFlt76ac02EKeYMqJXUxEpWnCZnFeATpoH6md5Qu8jmfRT7pANGPLBEA3UHbaGepIofdpPAu6UR1bErhnmfUzRW6rgVWXN5GST2ZEOMMwV7WxSQHopOnpcJ70pH0dqJ7/A47SdULieiaE4Yx9aDgmAJKM7AnmopXtULwzfkUhkhwLTREB0BYEQgcLZCVNglEq8E7lSrt8GdU4+kkuQRNkjMxhhRhzbEoDQUW8agrGVoCN18g4vV05YFBu6bImBdUqMG8J376JnTnFIySruMbgQ7fhP34KGLchk5ljHA3phNXJCYiykaBTCJNPbJRGPoMruso5xYYRLvyBaqBnp53OsiL2wWWWJjUz85xjWaeLtIS4nK5T+L3NQ3RIYFjKerUApAt2mlSyQitoiLVwF6SiQTsP5B0AlWHKVpFOnvwfpXyXL7voiDmyqzqvUxLii/TPONcJWfd/Kd37hmVBDKhSiSAiFYVF/wYiMPBGyh7MxDlk7FUn5pKv2NnaR/fZF0Z4KqEU23Q3jBXpQBbdlL+Xr6rwGkIuLu/ukQwjRF+MEYYdzbnzKQEp5rJsxLUc1eAxWC7KCCNuYsvpIeILqYZdlEZumtEJhE2KCK5gMbpgszUkzuhH7XLVzNNIUm+xEynXYbtUGZ6TyUuWDSggR/SgRi+7740lB+vkCCLDdFBKNonekN34UH1w94QoX5sws/tvYjDCqfo3GdUgHYhyuOCVKLOZ3pbC+x8wOufneHU6Uo6fBuaUUJgsMwR1E6NSPMHV8bPsdpBO18HJnzYz+6QkU7nOaEkgO/CLwFrxTdpg/xkuTHHxG5BqHYapeCv7x125VxKN8zgN68h7UIiCVSqFM6jOgTTacQ7A47JPKTAB9Dlbu7Zvnp1aUrjmJKWVch7QK/Qq3FjvJOBMg/QYX1uAL8DjVGGKQD2Yzw4v7ZQ6dLvwTKMHldEzLqZ20OoTC06oc299JmbFNcBcW53QdScE2GqvTL5v1ZQpd7SkXNHteP9KtedkAsJ8mM6dA5q0IYWSIm+08/aZL3ooa2IhPmJEQ/c/98LwtPZJX9pdkmhmaI5hOpMvj1U2neCUlDvpUvifsuSuHSLPnftV7fo+6V9LK/a9nlkitftep8BW7+occYU3TgfCKzH9HGFH74gbyiNVLeH4MmpfYnVUFc5L6XVNeC5G+dgHDPtXyrU59ZpUC/Pg8kay+gWe2X4nka1lLjHkKQOoLnEPbPrYg5u7cc1IAs4TsoYThVirlX59gEQzo71Ad+oqGK65hkYeqpbH5WrE8S4L6d6r+o6jGm5prmmakHyemCVsapIrxZ1yV3IUTDwzI/jGxyGvCQfOXHTl4Ui5rhAz4B8VX3FUgFKyJLoWHorlKwFQYxWfAudXQGPix35HghXCe/5zsaUSqNg+iNIui4afSvqJZQe8d/ohjqnquoTUMQBz0/bzdFF17uUGD9c/NAlIWmkfR0MTsiIBKVqMzWt/9aVj+v4uDH4UD0N/MnyAyNwx+K8B42G6aXoeADPq1yUTSnQCWlTYIyOLzySgKnQ1BtzktAq+6KYC+CY66L3soHnaBtVTWl8MYP6fRMg0oGo/QMTC9P9eEHnvR/vD4M+naKTwKV46dbgyYlt8pTuPn1MScmBnfuWERo79MsoXAhVo9KIUPpiCQCZkPJqsxpQT+5/Qq+Iy6WV6YmbIHiZfr/pMky+zleQRH1YLzYjAxuxKqkAiiNd2AXnytF2HOE6mdrgNqaph+hqkjHjJIoDXUTqRsxkCrrZ6sl8FFtFPc6RSZ0jlqTUUY7STcmOKREzaNIpnfH0p5daXNgNh1tE3Bnk+Qltoa1qSSWBaxyAeus2y2HcRJXjF/77PUpKZTqTahvWj/b4AY4vVJovrDci77fLtFwhdWUTCp50W/Bk7AGZp6u0sFLtg7ePs5Il0Iz2tjPEzBSQL7dR15XAvGL1Pr87oST1bhI26/IqzSy/CMsacnRlp9wk8Kdjc5T+sOQxJeaHJRXJc+h5TROTsojq1XuZcHNcfRo8/W2Sn9x6Kl1hmzCHpcYNNfKlvahQFp3wHxhIw3Mg53SRdXBKdfi7wJRRqrEBsVGcclQqcYqPiLXyncIUShZdyr5AIDoZGOk0V570t36QIE/pbxgmI9D9LqWbkP38JmRrUMudOF+O8US9M5KndEbhWfprG4GmS9ASNhEjXZiZrLlkOUp3tk7QztYXcT+py5wZSGeox1ChGeqar9Jh59+V8cjRVfklzaT/2s8pSvfhPaa/HRulW/wlbT+WPxmJvhBpSX9l9OyEvhylI3wJ2LhMwcZe9no2iwqqzq5x6scb3hEwiSmTJuhYooquc5UYcTbc741ImzIFYJS4783AA4yL/red55KFdHrG+l+FoLT04Zyd7ifXkS8LgRHPNUhKJaTNB658/swvgKYDRiffT8QmoCGvaVUiURr2Tbwg3YHumH7/DnRmpf8DY83jkjZ6fCMAAAAASUVORK5CYII=)
+  repeat center fixed;
+  */
+  background-color: #1e1214;
+  background: repeating-radial-gradient(circle at 50%,
+      #2c1b1d,
+      #2c1b1d 5px,
+      #221010 5px,
+      #221010 7px);
+
+}
+
+
+
+body {
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 /* Some styling for the hyperlinks, mostly to just remove it so it keeps my CSS */
-a:link{
-    text-decoration: none;
-    color: rgb(182, 32, 34);    
+a:link {
+  text-decoration: none;
+  color: rgb(182, 32, 34);
 }
 
 a:visited {
-    text-decoration: none;
-  }
-  
-a:hover {
-    text-decoration: underline;
-  }
-  
-a:active {
-    text-decoration: underline;
-  }
+  text-decoration: none;
+  color: rgb(144, 38, 156);
+}
 
-  
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
 /* Big header text */
-.headText 
-{
-    font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; ;
-    text-shadow: rgb(0, 0, 0) 1px 1px 4px;
-    color:#b1a847;
-    font-size: 60px;
-    text-align: center;
-    margin: 0;
-    
+.headText {
+  font-family: 'IM Fell French Canon SC', 'Times New Roman', Times, serif;
+  text-shadow: rgb(0, 0, 0) 1px 1px 4px;
+  color: #b71a15;
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+
 }
 
 /* Smaller header text */
-.subHead
-{
-    font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; ;
-    text-shadow: 
+.subHead {
+  font-family: 'IM Fell French Canon SC', 'Times New Roman', Times, serif;
+  text-shadow:
     1px 1px 2px black,
     0 0 0.2em black;
-    font-weight: bold;
-    color:  #f1eba0;
-    font-size: 27px;
-    text-align: center;
-    margin-top: 0;
-    
+  font-weight: bold;
+  color: #c13e3e;
+  font-size: 27px;
+  text-align: center;
+  margin-top: 0;
+
 }
 
 /* Even smaller */
-.subHead2
-{
+.subHead2 {
   font-size: 24px;
   font-weight: bold;
   text-shadow: rgb(180, 180, 180) 1px 1px 1px;
-  color: #260303; 
-    
+  color: #85120f;
+
 }
 
 /* We have 2 textHighlight, one is used in-line, the other - textHighlightHeading - is to create small headers */
-.textHighlight
-{
-    font-size: 19px;
-    font-weight: bold;
-    text-shadow: #fffbf5 2px 2px 5px;
-    color: #260303;    
+.textHighlight {
+  font-size: 19px;
+  font-weight: bold;
+  color: #b9c5bf;
 
 }
 
-.textHighlightHeading
-{
-    font-size: 21px;
-    font-weight: bold;
-    text-shadow: rgb(180, 180, 180) 1px 1px 1px;
-    color: #260303;    
-    margin-top: 10px;
+.textHighlightHeading {
+  font-size: 21px;
+  font-weight: bold;
+  text-shadow: rgb(37, 15, 15)px 1px 1px;
+  color: #c8d4ce;
+  margin-top: 10px;
 
 }
 
 /* Generic breadtext div, it is used basically within every .border div */
-.breadText
-{   
-    font-size: 19px;
-    text-shadow: rgb(200, 200, 200) 1px 1px 3px;
-    line-height: 1.2;
-    
+.breadText {
+  font-family: 'Tinos';
+  font-size: 15pt;
+  color: #a2b1a9;
+  line-height: 1.2;
+
 }
 
 
@@ -99,98 +121,95 @@ a:active {
 
 /* This makes the small images used in for example races. It is only supported on desktop (see "display none" further down) */
 .desktopImage img {
-  
-  max-width:500px;
-  max-height:500px;
+
+  max-width: 500px;
+  max-height: 500px;
   width: auto;
   height: auto;
 }
 
 @media only screen and (max-width: 768px) {
-.desktopImage img {
-  display: none;
-}
+  .desktopImage img {
+    display: none;
+  }
 
 }
 
 /* The text box seen on every page. It looks super clunky, because it is.*/
-.border 
-{
-    border: 5px double #5f2920;
-    border-radius: 5px;
-    background-color: rgb(222, 206, 180,0.85);;
-    /*rgb(222, 206, 180,0.8);*/
-    padding: 4px;
-    flex-direction: column;
+.border {
+  border: 2px solid #bc3b3f;
+  box-shadow: 0 0 0 8px rgb(0, 0, 0), 0 0 0 10px #bc3b3f;
+  border-radius: 3px;
+  background-color: rgb(22, 21, 19, 0.25);
+  ;
+  /*rgb(222, 206, 180,0.8);*/
+  padding: 6px;
+  flex-direction: column;
 
-    /* This is all just to get the damn box centered and correctly bordered */
-    
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-    max-width: 70%;
-    
+  /* This is all just to get the damn box centered and correctly bordered */
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  max-width: 70%;
+
 }
 
-i
-{
-  text-shadow:#473b2b16 1px 1px 1px;
+
+i {
+  text-shadow: #473b2b16 1px 1px 1px;
 }
 
 /* This table is for the spell list */
 table.spellList {
 
-    border: 5px double #5f2920;
-    border-radius: 5px;
-    background-color: rgb(222, 206, 180,0.7);
-    width: 100%;
-    text-align: center;
+  border: 5px double #5f2920;
+  border-radius: 5px;
+  background-color: rgb(222, 206, 180, 0.7);
+  width: 100%;
+  text-align: center;
 
 }
 
-table.spellList td
-{
+table.spellList td {
   border: 1px solid #5f2920;
   padding: 5px;
   font-size: 17px;
-  
+
 }
 
-table.spellList a 
-{
+table.spellList a {
   font-size: 17px;
   font-style: italic;
   text-shadow: #fffbf5 2px 2px 5px;
-  color: #a30606;    
+  color: #a30606;
 }
 
 /* All this is the table used in DnD Backgrounds. It makes it so every-other heading is a different color, improves readability */
-table.a
-{
-    border: 5px double #5f2920;
-    border-radius: 5px;
-    background-color: rgb(222, 206, 180,0.7);
-    width: 100%;
-    text-align: left;
+table.a {
+  border: 5px double #5f2920;
+  border-radius: 5px;
+  background-color: rgb(222, 206, 180, 0.7);
+  width: 100%;
+  text-align: left;
 }
 
-table.a tr:nth-child(even).a {background-color: rgba(212, 207, 199, 0.7);}
+table.a tr:nth-child(even).a {
+  background-color: rgba(212, 207, 199, 0.7);
+}
 
-table.a th
-{
+table.a th {
   background-color: #5f2920;
   color: white;
   text-shadow: none;
   padding: 5px;
-  
+
 }
 
-table.a td
-{
+table.a td {
   padding: 2px;
   font-size: 17px;
 }
-

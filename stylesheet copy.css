@@ -1,0 +1,205 @@
+html { 
+  background: url(Images/background.png) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+/* Noise used for the background */
+.noise {
+  height: 100%;
+  background: linear-gradient(20deg, rebeccapurple, transparent), url(https://grainy-gradients.vercel.app/noise.svg);   
+  filter: contrast(170%) brightness(1000%);
+}
+
+body
+{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;  
+}
+
+/* Some styling for the hyperlinks, mostly to just remove it so it keeps my CSS */
+a:link{
+    text-decoration: none;
+    color: rgb(182, 32, 34);    
+}
+
+a:visited {
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: underline;
+  }
+  
+a:active {
+    text-decoration: underline;
+  }
+
+  
+/* Big header text */
+.headText 
+{
+    font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; ;
+    text-shadow: rgb(0, 0, 0) 1px 1px 4px;
+    color:#b1a847;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    
+}
+
+/* Smaller header text */
+.subHead
+{
+    font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; ;
+    text-shadow: 
+    1px 1px 2px black,
+    0 0 0.2em black;
+    font-weight: bold;
+    color:  #f1eba0;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 0;
+    
+}
+
+/* Even smaller */
+.subHead2
+{
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: rgb(180, 180, 180) 1px 1px 1px;
+  color: #260303; 
+    
+}
+
+/* We have 2 textHighlight, one is used in-line, the other - textHighlightHeading - is to create small headers */
+.textHighlight
+{
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: #fffbf5 2px 2px 5px;
+    color: #260303;    
+
+}
+
+.textHighlightHeading
+{
+    font-size: 21px;
+    font-weight: bold;
+    text-shadow: rgb(180, 180, 180) 1px 1px 1px;
+    color: #260303;    
+    margin-top: 10px;
+
+}
+
+/* Generic breadtext div, it is used basically within every .border div */
+.breadText
+{   
+    font-size: 19px;
+    text-shadow: rgb(200, 200, 200) 1px 1px 3px;
+    line-height: 1.2;
+    
+}
+
+
+
+
+/* This makes the small images used in for example races. It is only supported on desktop (see "display none" further down) */
+.desktopImage img {
+  
+  max-width:500px;
+  max-height:500px;
+  width: auto;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+.desktopImage img {
+  display: none;
+}
+
+}
+
+/* The text box seen on every page. It looks super clunky, because it is.*/
+.border 
+{
+    border: 5px double #5f2920;
+    border-radius: 5px;
+    background-color: rgb(222, 206, 180,0.85);;
+    /*rgb(222, 206, 180,0.8);*/
+    padding: 4px;
+    flex-direction: column;
+
+    /* This is all just to get the damn box centered and correctly bordered */
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    max-width: 70%;
+    
+}
+
+i
+{
+  text-shadow:#473b2b16 1px 1px 1px;
+}
+
+/* This table is for the spell list */
+table.spellList {
+
+    border: 5px double #5f2920;
+    border-radius: 5px;
+    background-color: rgb(222, 206, 180,0.7);
+    width: 100%;
+    text-align: center;
+
+}
+
+table.spellList td
+{
+  border: 1px solid #5f2920;
+  padding: 5px;
+  font-size: 17px;
+  
+}
+
+table.spellList a 
+{
+  font-size: 17px;
+  font-style: italic;
+  text-shadow: #fffbf5 2px 2px 5px;
+  color: #a30606;    
+}
+
+/* All this is the table used in DnD Backgrounds. It makes it so every-other heading is a different color, improves readability */
+table.a
+{
+    border: 5px double #5f2920;
+    border-radius: 5px;
+    background-color: rgb(222, 206, 180,0.7);
+    width: 100%;
+    text-align: left;
+}
+
+table.a tr:nth-child(even).a {background-color: rgba(212, 207, 199, 0.7);}
+
+table.a th
+{
+  background-color: #5f2920;
+  color: white;
+  text-shadow: none;
+  padding: 5px;
+  
+}
+
+table.a td
+{
+  padding: 2px;
+  font-size: 17px;
+}
+
