@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="../navBarSheet.css">
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("../navBarReference.html");
+        });
+    </script>
+
+    <style>
+        .border {
+            border: 2px solid #ffe900;
+            box-shadow: 0 0 0 8px rgb(0, 0, 0), 0 0 0 10px #ffe900;
+        }
+
+        .breadText {
+            text-align: left;
+            font-size: 16pt;
+            color: #e1e4e2;
+        }
+
+        .headText {
+            font-family: Mork;
+            color: #ffe900;
+        }
+
+        .subHead {
+            font-size: 40px;
+            font-family: Blach;
+            color: #ffe900;
+            text-align: left;
+        }
+
+        .textHighlight {
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12pt;
+            font-weight: 100;
+            background-color: #FF3EB5;
+        }
+
+        .textHighlightHeading {
+            font-family: News;
+            font-size: 15pt;
+            color: black;
+            background-color: white;
+        }
+
+        .subtleHighlight {
+            color: #FF3EB5;
+            font-family: 'Alegreya';
+            text-shadow: 0px 1px #c51f85;
+            font-size: 15pt;
+            font-weight: 100;
+        }
+    </style>
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+
+    <title>Förvisad Riddare</title>
+</head>
+
+<body>
+
+    <!-- Navbar, imported using JQuery above -->
+    <div id="includedContent"></div>
+
+    <!-- Line break into breadtext-->
+    <br>
+    <div class="border">
+        <!-- Intro -->
+        <div class="breadText" style="text-align: center;">
+            <div class="headText">
+                Förvisad Riddare
+            </div>
+            <!-- Lore Text-->
+            <i>Du hade allt. Adlad av en riddarorden, given mer än bara förnödenheter, kamrater som stod vid din sida
+                inte för att plundra ditt lik när tiden väl kom, utan för att de fann ett släktskap med dig. Idag är
+                allt du har rustning och skammen av en gåva illa behandlad… Och en väldigt arg inkvisition som vill ha
+                tillbaka sin rustning.
+            </i>
+            <br>
+        </div>
+        <br>
+        <div class="breadText" style="transform: rotate(-0.1deg);">
+            <span class="textHighlight">Startar med 2t6x10s och t2 Järtecken</span>
+        </div>
+        <br>
+        <!-- Egenskaper -->
+        <div class="breadText">
+            <div class="subHead">Egenskaper</div>
+            <div class="breadText">
+                Att vara klädd i rustning större delen av ditt liv har gjort dig
+                <span class="textHighlightHeading">TUFF,</span> du slår Tålighet med 3t6+2.
+                Stressen att vara jagad av inkvisitionen har däremot gjort dig
+                <span class="textHighlightHeading">PARANOID,</span> slå Närvaro med 3t6-2.
+                Du konsulterar vapentabellen med t6 och kan inte nyttja krafter.
+                <br>
+                <!-- Rustning -->
+                <div style="font-family: 'Alegreya'; font-size: 13pt;">
+                    Du börjar med en trasig dock helgad riddarrustning som du sällan ses utanför. Den räknas som Lätt rustning, varje gång du
+                    <span class="subtleHighlight">Blir Bättre</span>
+                    kan du istället slå på rustningstabellen, om resultatet är bättre än din 
+                    nuvarande rustning ökas den ett steg. 
+                    <div style="transform: rotate(-0.4deg)">
+                        <span class="textHighlight">
+                            DU KAN INTE SMUTSA NED DIN KROPP MED ANNAN RUSTNING ÄN DENNA.
+                        </span>
+                    </div>
+                </div>
+                Din rustning börjar även med ett av följande, och ytterligare en ny varje gång rustningen förbättras:
+            </div>
+        </div>
+
+        <!-- Föremål 1 -->
+        <div class="breadText">
+            <div class="subHead" style="font-size: 20pt; font-family: News;">1. Blixtkastare</div>
+            Din ena arm kan kasta blixtar upp till 10 meter, t6 skada. På 5-6 överbelastas den,
+            du tar t3 skada, kan inte användas igen förrän vila.
+        <div class="breadText">
+            <div class="subHead" style="font-size: 20pt; font-family: News;">2. Masugn</div>
+            Rustningen håller dig alltid varm. Om du krittar på att undvika i närstrid
+            antänder attackeraren och tar t6 skada.
+        </div>
+        <div class="breadText">
+            <div class="subHead" style="font-size: 20pt; font-family: News;">X. Titel</div>
+            Brödtext
+        </div>
+    </div>
+
+
+</body>
+
+</html>
