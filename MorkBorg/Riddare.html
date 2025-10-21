@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../stylesheet.css">
     <link rel="stylesheet" href="../navBarSheet.css">
+    <link rel="stylesheet" href="morkstyle.css">
     <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
@@ -13,53 +14,6 @@
         });
     </script>
 
-    <style>
-        .border {
-            border: 2px solid #ffe900;
-            box-shadow: 0 0 0 8px rgb(0, 0, 0), 0 0 0 10px #ffe900;
-        }
-
-        .breadText {
-            text-align: left;
-            font-size: 16pt;
-            color: #e1e4e2;
-        }
-
-        .headText {
-            font-family: Mork;
-            color: #ffe900;
-        }
-
-        .subHead {
-            font-size: 40px;
-            font-family: Blach;
-            color: #ffe900;
-            text-align: left;
-        }
-
-        .textHighlight {
-            color: white;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 12pt;
-            font-weight: 100;
-            background-color: #FF3EB5;
-        }
-
-        .textHighlightHeading {
-            font-family: News;
-            font-size: 15pt;
-            color: black;
-            background-color: white;
-        }
-
-        .subtleHighlight {
-            color: #FF3EB5;
-            font-family: 'Alegreya';
-            text-shadow: 0px 1px #c51f85;
-            font-size: 15pt;
-            font-weight: 100;
-        }
-    </style>
 
     <!-- Fonts -->
     <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
@@ -83,16 +37,17 @@
             </div>
             <!-- Lore Text-->
             <i>Du hade allt. Adlad av en riddarorden, given mer än bara förnödenheter, kamrater som stod vid din sida
-                inte för att plundra ditt lik när tiden väl kom, utan för att de fann ett släktskap med dig. Idag är
-                allt du har rustning och skammen av en gåva illa behandlad… Och en väldigt arg inkvisition som vill ha
-                tillbaka sin rustning.
+                inte för att plundra ditt lik när tiden väl kom, utan för att de fann ett släktskap med dig. Idag
+                är du förvisad. Dagen din skam skulle visas upp för din riddarorden flydde du, fortfarande klädd 
+                i din helgade rustning, en relik från ett krig många slogs i utan att veta varför.
+                Inkvisitionen jagar dig, och du kan inte gömma dig för alltid...
             </i>
             <br>
         </div>
         <br>
         <div class="breadText" style="transform: rotate(-0.1deg); display: flex; flex-direction: row;">
-            <div style="flex-direction: row;">
-                <span class="textHighlight">Startar med 2t6x10s och t2 Järtecken och blev förvisad</span>
+            <div style="flex-direction: row; font-size: 15pt;" >
+                <span class="textHighlight">TP: Tålighet + t8<br>Startar med 2t6x10s och t2 Järtecken och blev förvisad</span>
                 <span class="textHighlightHeading">1.</span> för vanhelgande av de döda i Graven-Tosk.
                 <span class="textHighlightHeading">2.</span> personligen av Kung Fathum IX efter kungamord.
                 <span class="textHighlightHeading">3.</span> efter din riddarorden sökte Skuggkungens hjälp.
@@ -114,12 +69,10 @@
                 <br>
                 <!-- Rustning -->
                 <div style="font-family: 'Alegreya'; font-size: 13pt;">
-                    Trots förvisning bär du alltid din förstörda helgade riddarrustning.
-                    Ingen minns kriget, och ingen kan tillverka nya rustningar, endast reparera gamla. Den börjar som
-                    Lätt
-                    rustning, men varje gång du
+                    Du bär alltid din riddarrustning, som under din förvisning gått sönder.
+                    Den börjar som Lätt rustning, men varje gång du
                     <span class="subtleHighlight">Blir Bättre</span>
-                    kan du istället slå på rustningstabellen. Om resultatet är bättre än din
+                    kan du istället slå på rustningstabellen för att reparera den. Om resultatet är bättre än din
                     nuvarande rustningsnivå ökas den ett steg.
                     <div style="transform: rotate(-0.4deg)">
                         <span class="textHighlight">
@@ -134,45 +87,45 @@
         <!-- Föremål 1 -->
         <div style="display: flex; flex-direction: row;">
             <!-- Items 1,2,3-->
-            <div style="display: flex; flex-direction: column; width: 50%;">
+            <div style="display: flex; flex-direction: column; width: 50%; padding-right: 2px;">
                 <div class="breadText">
-                    <div class="subHead" style="font-size: 20pt; font-family: News;">1. Blixtkastare</div>
+                    <div class="subHead" style="font-size: 18pt; font-family: News;">1. Blixtkastare</div>
                     Din ena arm kan kasta blixtar upp till 10 meter, t6 skada. På 5-6 överbelastas den,
                     du tar t3 skada.
                 </div>
                 <div class="breadText">
-                    <div class="subHead" style="font-size: 20pt; font-family: News;">2. Masugn</div>
+                    <div class="subHead" style="font-size: 18pt; font-family: News;">2. Masugn</div>
                     Glödheta metalliska kärl håller dig alltid varm och dina fingrar knäpps som
                     tändstål. Dessutom om du krittar på att undvika i närstrid
                     antänder attackeraren och tar t6 skada.
                 </div>
                 <div class="breadText">
-                    <div class="subHead" style="font-size: 20pt; font-family: News;">3. JÄRN-A</div>
-                    En själ konstruerad i järn lever i din rustning. Endast du kan höra den, och den hjälper
-                    dig nyttja magi. Du kan nyttja en kraft per dag såvida du har pergamentrullen. När någon
-                    nyttjar en kraft kan du spendera järtecken för att välja om kraften lyckas eller ej,
-                    slå sedan t6. På en 1:a sker en magisk katastrof dig. Kasta ytterligare t6 för varje
-                    gång du använt denna förmåga, återställ efter en katastrof.
+                    <div class="subHead" style="font-size: 18pt; font-family: News;">3. JÄRN-A</div>
+                    Den konstruerade själen i din rustning har vaknat. Du kan tala till den, och om du 
+                    vidrör något vars ord du kan förstå kan denne själ försöka överföras.
+                    <span class="subtleHighlight">Närvaro SG 18</span>, -1 SG för varje dag du 
+                    varit i kontakt med mottagaren. Själen är gjord för att lyda rustningen,
+                    men ett medvetande är ett komplext ting...
                 </div>
 
             </div>
             <!-- Items 4,5,6 -->
-            <div style="display: flex; flex-direction: column; width: 50%;">
+            <div style="display: flex; flex-direction: column; width: 50%; padding-left: 2px;">
                 <div class="breadText">
-                    <div class="subHead" style="font-size: 20pt; font-family: News;">4. Metallsinne</div>
+                    <div class="subHead" style="font-size: 18pt; font-family: News;">4. Metallsinne</div>
                     Med din hjälm på är du medveten om alla metalliska implement inom hörhåll; Vapen, verktyg,
                     lyktgubbar.
                     De viskar om vad de nyligen gjort, <span class="subtleHighlight">Närvaro SG 12</span> för att
                     lyssna.
                 </div>
                 <div class="breadText">
-                    <div class="subHead" style="font-size: 20pt; font-family: News;">5. Löst Finger</div>
+                    <div class="subHead" style="font-size: 18pt; font-family: News;">5. Löst Finger</div>
                     Kan en gång per dag skruvas loss och förvandlas till en metallisk trollslända i 2t10 minuter.
                     Du styr och ser genom den. Den kan se och höra bättre än en vanlig
                     människa, men saknar resterande sinnen. Din riktiga kropp är paralyserad under denna tid.
                 </div>
                 <div class="breadText">
-                    <div class="subHead" style="font-size: 20pt; font-family: News;">6. Häxjägare</div>
+                    <div class="subHead" style="font-size: 18pt; font-family: News;">6. Häxjägare</div>
                     Denne rustning var gjord att jaga häxor och kättare. Om någon har nyttjat magi
                     eller hädat senaste dygnet skimrar de svagt grönt. Handlingar mot dem har -2 i SG.
                 </div>

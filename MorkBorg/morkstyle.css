@@ -1,0 +1,113 @@
+.border {
+    border: 2px solid #ffe900;
+    box-shadow: 0 0 0 8px rgb(0, 0, 0), 0 0 0 10px #ffe900;
+}
+
+.breadText {
+    text-align: left;
+    font-size: 16pt;
+    color: #e1e4e2;
+}
+
+.headText {
+    font-family: Mork;
+    color: #ffe900;
+}
+
+.subHead {
+    font-size: 40px;
+    font-family: Blach;
+    color: #ffe900;
+    text-align: left;
+}
+
+.textHighlight {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    font-weight: 100;
+    background-color: #FF3EB5;
+}
+
+.textHighlightHeading {
+    font-family: News;
+    font-size: 15pt;
+    color: black;
+    background-color: white;
+}
+
+.subtleHighlight {
+    color: #FF3EB5;
+    font-family: 'Alegreya';
+    text-shadow: 0px 1px #c51f85;
+    font-size: 15pt;
+    font-weight: 100;
+}
+
+/* Hyperlinks */
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #FF3EB5;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* HALT! Annoying navbar stuff ahead! */
+.topNav {
+    background-color: black;
+    font-family: 'Alegreya';
+    font-weight: 900;
+}
+
+.topNav b {
+    color: #FF3EB5;
+    text-shadow: none;
+}
+
+.topNav>a {
+    color: #FF3EB5;
+    text-shadow: none;
+
+}
+
+.topNav>a::after,
+.dropbtn a::after {
+    background-color: #FF3EB5;
+}
+
+.dropdown a {
+    color: #FF3EB5;
+    font-weight: 900;
+    text-shadow: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF3EB5;
+    color: #ffe900;
+}
+
+.dropdown .dropbtn {
+    color: #FF3EB5;
+    font-weight: 900;
+    text-shadow: none;
+}
+
+.dropdown-content {
+    background-color: black;
+}
+
+.topNav a.active,
+.dropbtn.active {
+    color: #ffe900;
+}

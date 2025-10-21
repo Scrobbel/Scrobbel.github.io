@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="../navBarSheet.css">
+    <link rel="stylesheet" href="morkstyle.css">
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("../navBarReference.html");
+        });
+    </script>
+    
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+
+    <title>Ärrad Astrolog</title>
+</head>
+
+<body>
+
+    <!-- Navbar, imported using JQuery above -->
+    <div id="includedContent"></div>
+
+    <!-- Line break into breadtext-->
+    <br>
+    <div class="border">
+        <!-- Intro -->
+        <div class="breadText" style="text-align: center;">
+            <div class="headText">
+                Ärrad Astrolog
+            </div>
+            <!-- Lore Text-->
+            <i>Himlen är grå, varje dag och varje kväll. Solen skiner knappt igenom molnen av sot och oheligt vatten,
+                och man kan glömma att någonsin se stjärnorna. Men ändå har du sett dem, och till din skräck har</i>
+            <span class="subtleHighlight" style="background-color: #ffe900;">STJÄRNORNA SETT DIG.</span>
+            <br>
+        </div>
+        <br>
+        <div class="breadText" style="display: flex; flex-direction: row;">
+            <div style="flex-direction: column; width: 50%;">
+                <span class="textHighlight">TP: Tålighet + t4<br>Startar med 3t6x10s och t2 Järtecken och är
+                    <span style="font-family: News; font-size: 11pt;">FÖRVRÄNGD</span></span>
+                <br>
+                <span class="textHighlightHeading">1.</span> Du ser ut som en malman <span style="font-family: 'Courier New', Courier, monospace; font-size: 9pt;">kan dock inte flyga...</span>
+                <span class="textHighlightHeading">2.</span> Hud sträv som sandpapper, och låter som metall mot porslin.
+                <br>
+                <span class="textHighlightHeading">3.</span> Ditt huvud kan vridas som en uggla. Faktiskt, alla dina lemmar kan.
+                <span class="textHighlightHeading">4.</span>
+                <br>
+                <span class="textHighlightHeading">5.</span>
+                <span class="textHighlightHeading">6.</span>
+            </div>
+            <div
+                style="position:absolute; right:20%;  mix-blend-mode: soft-light; margin-left: 20px; transform: rotate(-2.5deg); border-radius: 8px; box-shadow: 0 0 5px 5px #1e1214, 0 0 9px 9px #1e1214 inset; background-image: url(../images/moth-person.jpg); width: 400px; height: 400px;">
+            </div>
+        </div>
+        <br>
+        <!-- Egenskaper -->
+        <div class="breadText">
+            <div class="subHead">Egenskaper</div>
+            <div class="breadText" style="font-family: 'Courier New', Courier, monospace; font-size: 14pt;">
+                Astrologer lever i konstant stress. De har sett något som varken <span
+                    class="subtleHighlight">HON</span> eller
+                <span class="subtleHighlight">HAN</span> någonsin kunde känna till, och är alltid <span
+                    class="textHighlightHeading" style="font-size: 13pt;">MEDVETNA OCH SLITNA</span>
+                från det. Slå 3t6+2 Närvaro, välj en annan attribut att slå 3t6-2 för.
+                <div style="display:inline-block; transform: rotate(0.8deg); margin-top: 9px;">
+                    <span style="background-color: #ffe900; color: black; font-family: Alegreya;">Astrologen konsulterar
+                        vapentabellen med t4 och rustningstabellen med t2.
+                    </span>
+                </div>
+                Stjärnorna iakttar dig ivrigt, för dig är nattens mörker alltid upplyst av stjärnor.  
+                Om du sover i detta ljus testa <span class="subtleHighlight">Närvaro SG 10</span> eller 
+                hela -t3 mindre (minimum 0).
+                <div class="breadText">
+                Bestäm sedan dina astrala talanger. Rulla två gånger.
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Föremål 1 -->
+        <div style="display: flex; flex-direction: row;">
+            <!-- Items 1,2,3,4-->
+            <div style="display: flex; flex-direction: column; width: 50%; padding-right: 2px;">
+                <div class="breadText">
+                    <span class="subHead" style="font-size: 20pt; font-family: News;">1.Allseende Öga</span>
+                    Du kan se genom ögonen av den sista varelsen du vidrört. Andra eventuella sinnen följer med.
+                </div>
+                <div class="breadText">
+                    <span class="subHead" style="font-size: 20pt; font-family: News;">2.Penna </span>
+                    Priest of the Morning Star
+                </div>
+                <div class="breadText">
+                    <span class="subHead" style="font-size: 20pt; font-family: News;">3.Polstjärna</span>
+                    Räknas som en kraft, men slå mot Närvaro SG 10. Himlavalvet markerar något du ser,
+                    i t3 dygn lyser en stjärna under natten som visar riktningen till dem.
+                </div>
+                <div class="breadText">
+                    <span class="subHead" style="font-size: 20pt; font-family: News;">4.K'urrs Ljus</span>
+
+                </div>
+
+            </div>
+            <!-- Items 4,5,6 -->
+            <div style="display: flex; flex-direction: column; width: 50%; padding-left: 2px;">
+                <div class="breadText">
+                    <div class="subHead" style="font-size: 20pt; font-family: News;">5.Mörker</div>
+                    Knyt en snara?
+                </div>
+                <div class="breadText">
+                    <div class="subHead" style="font-size: 20pt; font-family: News;">6.Sia Framtid </div>
+                    Gör astrologen galen
+                </div>
+                <div class="breadText">
+                    <div class="subHead" style="font-size: 20pt; font-family: News;">7. </div>
+
+                </div>
+                <div class="breadText">
+                    <div class="subHead" style="font-size: 20pt; font-family: News;">8. </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+
+</body>
+
+</html>
