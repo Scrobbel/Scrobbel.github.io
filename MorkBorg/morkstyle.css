@@ -81,6 +81,10 @@ a:active {
 
 }
 
+.topNav a:hover{
+    text-decoration: none;
+}
+
 .topNav>a::after,
 .dropbtn a::after {
     background-color: #FF3EB5;
