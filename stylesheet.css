@@ -35,6 +35,11 @@
   font-family: 'Alegreya';
   src: url('Fonts/Alegreya-Regular.woff') format('woff');
 }
+/* inconsolata */
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('Fonts/Inconsolata.woff') format('woff');
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
