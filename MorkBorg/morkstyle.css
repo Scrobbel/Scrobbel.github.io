@@ -47,7 +47,8 @@
 /* Hyperlinks */
 a:link {
     text-decoration: none;
-    color: inherit;
+    font-weight: bold;
+    color: #ffe900;
 }
 
 a:visited {
@@ -73,6 +74,8 @@ a:active {
 .topNav b {
     color: #FF3EB5;
     text-shadow: none;
+    color: #ffe900;
+    font-family: 'Mork';
 }
 
 .topNav>a {

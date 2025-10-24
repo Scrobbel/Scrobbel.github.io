@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/navBarSheet.css">
+    <link rel="stylesheet" href="/MorkBorg/morkstyle.css">
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("/MorkBorg/morkBarReference.html");
+        });
+    </script>
+    
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+    <title>Klasser</title>
+</head>
+
+<body>
+
+    <!-- Navbar, imported using JQuery above -->
+    <div id="includedContent"></div>
+
+    <!-- Line break into breadtext-->
+    <br>
+    <div class="headText">
+        KLASSER
+    </div>
+    <br>
+    <div class="border">
+        <div class="subHead">
+            Offer
+        </div>
+        <div class="breadText">
+            Nya klasser, nya offer. Klicka på namnet och se Tvelands nästa dåre. Kasta tärning, eller kasta kniv på din skärm!
+            <br><br>
+            <div>
+                <span class="textHighlightHeading"><a href="Klasser/Astrolog.html">1. Ärrad Astrolog.</a></span> Någon som sett allt för mycket.
+            </div>
+            <br>
+            <div>
+                <span class="textHighlightHeading"><a href="Klasser/Riddare.html">2. Förvisad Riddare.</a></span> En misslyckad riddare som flydde med sin rustning.
+            </div>
+            <br>
+            <div>
+                <span class="textHighlightHeading"><a href="">Klass.</a></span> Text.
+            </div>
+        </div>
+        <br>
+
+    </div>
+</body>
+
+</html>
