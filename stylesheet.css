@@ -46,7 +46,8 @@
 
 html {
   background-color: #1e1214;
-  background: url(Images/bakgrund.png) repeat;
+  
+  background: url('./Images/bakgrund.png') repeat;
   /* Old gradient background, keeping it just in case 
   background: repeating-radial-gradient(circle at 50%,
       rgba(44, 27, 29),
