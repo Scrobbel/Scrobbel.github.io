@@ -40,6 +40,9 @@
   font-family: 'Inconsolata';
   src: url('Fonts/Inconsolata.woff') format('woff');
 }
+/* ancient */
+/*  font-family: "JSL Ancient V1";  */
+@import url(https://db.onlinewebfonts.com/c/1fd1f09e1df076a40de1b06113df7c58?family=JSL+Ancient+V1); 
 
 
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');

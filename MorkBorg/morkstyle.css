@@ -44,6 +44,14 @@
     font-weight: 100;
 }
 
+.churchText {
+    color: #FF3EB5;
+    font-family: "JSL Ancient V1";  
+    font-size: 15pt;
+    background-color: #ffe900;
+    text-transform: uppercase;
+}
+
 /* Hyperlinks */
 a:link {
     text-decoration: none;
