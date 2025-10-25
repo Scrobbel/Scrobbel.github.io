@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/navBarSheet.css">
+    <link rel="stylesheet" href="/MorkBorg/morkstyle.css">
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("../navBarReference.html");
+        });
+    </script>
+
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+
+    <title>Ljusmakare</title>
+</head>
+
+<body>
+
+    <!-- Navbar, imported using JQuery above -->
+    <div id="includedContent"></div>
+
+    <!-- Line break into breadtext-->
+    <br>
+    <div class="border">
+        <!-- Intro -->
+        <div class="breadText" style="text-align: center;">
+            <div class="headText">
+                Misslyckad Ljusmakare
+            </div>
+            <!-- Lore Text-->
+            <i>I tjänst till <span class="churchText" style="font-style: normal;">kyrkan</span> är ljusmakare. När
+                inkvisitionen fångar in kättare
+                har vissa oturen att bli lyktgubbar, och det är dessa ljusmakare som utför ritualen och sedan håller dem
+                tända.
+            </i>
+            <br>
+        </div>
+
+        <!-- Outermost flex-container -->
+        <div style="display: flex; flex-direction: row;">
+            <!-- Origin container -->
+            <div style="float: left; text-align: left; margin-right: 15px;">
+
+                <div class="breadText" style="display: flex; flex-direction: row;">
+                    <!-- TP / Järtecken / Utbränd -->
+                    <div style="flex-direction: row; margin-right: 5px; flex-grow: 2;">
+                        <div style="text-align: right; font-family: Inconsolata; font-size: 11pt; letter-spacing: -0.05em; color:#FFE900">
+                            Varför är du så jäkla utbränd?
+                        </div>
+                        <div style="transform: rotate(-1deg);">
+                            <span class="textHighlight">TP: Tålighet + t4<br>Startar med 2t6x5s. Läs vidare för
+                                järtecken!</span>
+                            <br>
+                        </div>
+                    </div>
+
+                    <!-- Origin 1,2,3 -->
+                    <div style="flex-direction: row; font-family: Inconsolata; font-size: 11pt; letter-spacing: -0.05em;"
+                        ;>
+                        <div>
+                            <span class="textHighlightHeading" style="font-size: 13pt;">1.</span>
+                            Du studerade tills din kropp gav upp, endast för att aldrig få nyttja dina talanger till
+                            fullo.
+                        </div>
+                        <div style="display: flex; flex-direction: inherit;">
+                            <span class="textHighlightHeading">2.</span>
+                            Test
+                        </div>
+                        <div style="display: flex; flex-direction: inherit;">
+                            <span class="textHighlightHeading">3.</span>
+                            Test
+                        </div>
+                    </div>
+                    <!-- Origin 4,5,6 -->
+                    <div style="flex-direction: row;">
+                        <div style="display: flex; flex-direction: inherit;">
+                            <span class="textHighlightHeading" style="display: flex; flex-direction: inherit;">1.</span>
+                            Test
+                        </div>
+
+                        <div style="display: flex; flex-direction: inherit;">
+                            <span class="textHighlightHeading" style="display: flex; flex-direction: inherit;">2.</span>
+                            Test
+                        </div>
+
+                        <div style="display: flex; flex-direction: inherit;">
+                            <span class="textHighlightHeading" style="display: flex; flex-direction: inherit;">3.</span>
+                            Test
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Class Properties container -->
+            <div>
+                <!-- Egenskaper -->
+                <div class="breadText">
+                    <div class="subHead">Egenskaper</div>
+                    <div class="breadText">
+                        Ett liv spenderat i Galgenbecks fängelsehålor
+                        <br>
+
+                    </div>
+                </div>
+                <br>
+                <!-- Föremål 1 -->
+                <div style="display: flex; flex-direction: row;">
+                    <!-- Items 1,2,3-->
+                    <div style="display: flex; flex-direction: column; width: 50%; padding-right: 2px;">
+                        <div class="breadText">
+                            <span class="subHead" style="font-size: 20pt; font-family: News;">1. </span>
+
+                        </div>
+                        <div class="breadText">
+                            <span class="subHead" style="font-size: 20pt; font-family: News;">2. </span>
+
+                        </div>
+                        <div class="breadText">
+                            <span class="subHead" style="font-size: 20pt; font-family: News;">3. </span>
+
+                        </div>
+
+                    </div>
+                    <!-- Items 4,5,6 -->
+                    <div style="display: flex; flex-direction: column; width: 50%; padding-left: 2px;">
+                        <div class="breadText">
+                            <span class="subHead" style="font-size: 20pt; font-family: News;">4. </span>
+
+                        </div>
+                        <div class="breadText">
+                            <span class="subHead" style="font-size: 20pt; font-family: News;">5. </span>
+
+                        </div>
+                        <div class="breadText">
+                            <span class="subHead" style="font-size: 20pt; font-family: News;">6. </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+    </div>
+    </div>
+    <br>
+
+</body>
+
+</html>

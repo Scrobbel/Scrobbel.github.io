@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/navBarSheet.css">
+    <link rel="stylesheet" href="/MorkBorg/morkstyle.css">
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("/MorkBorg/morkBarReference.html");
+        });
+    </script>
+
+    
+
+    <title>Grift</title>
+</head>
+
+<body>
+
+    <!-- Navbar, imported using JQuery above -->
+    <div id="includedContent"></div>
+
+    <!-- Line break into breadtext-->
+    <br>
+    <div class="headText">
+        GRIFT
+    </div>
+    <br>
+    <div class="border">
+        <br>
+        <div class="breadText" style="text-align: center;">
+            <i>
+                Under konstruktion
+            </i>
+        </div>
+        <br>
+        <div class="subHead">
+            Överblick
+        </div>
+        <div class="breadText">
+            Förbannad av en ärkemagiker för länge sedan, luften i Grift är fylld av aska som sätter sig i stensprickorna och förgiftar barnen.
+            Ibland föds någon med ärkemagikerns sista hån - Krutsikt.
+        </div>
+        <br>
+
+    </div>
+</body>
+
+</html>
