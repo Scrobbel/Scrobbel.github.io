@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/navBarSheet.css">
+    <link rel="stylesheet" href="/MorkBorg/morkstyle.css">
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("/MorkBorg/morkBarReference.html");
+        });
+    </script>
+
+    
+
+    <title>Schleswig</title>
+</head>
+
+<body>
+
+    <!-- Navbar, imported using JQuery above -->
+    <div id="includedContent"></div>
+
+    <!-- Line break into breadtext-->
+    <br>
+    <div class="headText">
+        SCHLESWIG
+    </div>
+    <br>
+    <div class="border">
+        <br>
+        <div class="breadText" style="text-align: center;">
+            <i>
+                Under konstruktion
+            </i>
+        </div>
+        <br>
+        <div class="subHead">
+            Överblick
+        </div>
+        <div class="breadText">
+            Den största staden som någonsin funnits, byggd runt en enorm katedral synlig vars man än är, grundad för snart 500 år sedan på samma plats 
+            där <span class="subtleChurchText">sidorna smuts</span> först upptäcktes. Allting i Galgenbeck är centrerat runt deras tro:
+            Hus rivs ned för att göra plats åt kyrkor i <span class="churchText">HANS</span> namn, kättare bestraffas till att bli lyktgubbar
+            och ingen kung eller drottning håller makt, endast <span class="subtleChurchText">Ärkeprästinna Josilfa Migol.</span>
+            Hon är den högste härskaren i <span class="churchText">Kyrkan av De Tvehövdade Basiliskerna</span>, och endast hon och hennes 
+            få utvalda får läsa ur <span class="subtleChurchText">sidorna smuts</span>.
+        </div>
+        <br>
+
+    </div>
+</body>
+
+</html>
