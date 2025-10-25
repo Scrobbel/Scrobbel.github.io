@@ -36,6 +36,7 @@
     background-color: white;
 }
 
+/* This looks similar to hyperlinks, beware */
 .subtleHighlight {
     color: #FF3EB5;
     font-family: 'Alegreya';
@@ -43,13 +44,21 @@
     font-size: 15pt;
     font-weight: 100;
 }
-
+/* Used when mentioning the basilisks or the full name of the church */
 .churchText {
-    color: #FF3EB5;
+    color: #ffe900;
     font-family: "JSL Ancient V1";  
-    font-size: 15pt;
-    background-color: #ffe900;
+    font-size: 16pt;
+    padding: 1px;
+    background-color: #FF3EB5;
     text-transform: uppercase;
+}
+.subtleChurchText {
+    color: #ffe900;
+    font-family: 'Courier';
+    text-shadow: 0px 1px #ffea00b1;
+    font-size: 14pt;
+    font-weight: 100;
 }
 
 /* Hyperlinks */
