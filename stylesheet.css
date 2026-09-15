@@ -46,16 +46,22 @@
   src: url('https://db.onlinewebfonts.com/c/1fd1f09e1df076a40de1b06113df7c58?family=JSL+Ancient+V1')
 }
 
-/* didact */
 @font-face {
-  font-family: "Didact Gothic", sans-serif;
-  src: url('Fonts/DidactGothic-Regular.woff') format('woff');
+    font-family: 'Nasalization';
+    src: url('Fonts/Webfonts/nasalization-webfont.woff2') format('woff2'),
+         url('Fonts/Webfonts/nasalization-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-/* nasalization */
 @font-face {
-  font-family: "Nasalization", sans-serif;
-  src: url('Fonts/Nasalization.woff') format('woff');
+    font-family: 'Didact';
+    src: url('Fonts/Webfonts/didactgothic-regular-webfont.woff2') format('woff2'),
+         url('Fonts/Webfonts/didactgothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 

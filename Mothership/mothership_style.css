@@ -17,7 +17,7 @@ html {
 }
 
 .breadText {
-    font-family: "Didact Gothic";
+    font-family: "Didact";
     text-align: left;
     font-size: 16pt;
     color: #33ff00;
@@ -44,7 +44,7 @@ html {
 }
 
 .textHighlightHeading {
-    font-family: "Didact Gothic";
+    font-family: "Didact";
     font-size: 15pt;
     color: black;
     background-color: white;
@@ -98,7 +98,7 @@ a:active {
 /* HALT! Annoying navbar stuff ahead! */
 .topNav {
     background-color: black;
-    font-family: 'Didact Gothic';
+    font-family: 'Didact';
     font-weight: bolder;
 }
 
