@@ -1,0 +1,47 @@
+<!-- Navbar -->
+<div class="topNav">
+    <b class="crt">
+        MOTHERSHIP
+    </b>
+    <a href="/index.html"> LÄMNA </a>
+    <a href="/Mothership/index.html">START</a>
+    <!-- SYSTEM -->
+    <div class="dropdown">
+        <button class="dropbtn"><a> SEKTOR MONA &#8595;</a></button>
+        <div class="dropdown-content">
+            <a href="/MorkBorg/Cities/galgenbeck.html">SAMSA</a>
+            <a href="/MorkBorg/Cities/schleswig.html">EPSILON-PI-III</a>
+            <a href="/MorkBorg/Cities/schleswig.html">SYBIL SYSTEMET</a>
+            <a href="/MorkBorg/Cities/schleswig.html">HEFAISTOS</a>
+        </div>
+    </div>
+    <!-- Folktro -->
+    <div class="dropdown">
+        <button class="dropbtn"> <a>KULTUR &#8595;</a></button>
+        <div class="dropdown-content">
+            <a href="/MorkBorg/World/folklore.html">Folktro</a>
+            <a href="/MorkBorg/World/religion.html">Religion</a>
+        </div>
+    </div>
+
+    <a href="/MorkBorg/Classes/index.html">Klasser</a>
+</div>
+
+<!-- We use a some scripts to highlight the current site we're on -->
+<script>
+    /* This gets for all the non-dropdown elements */
+    document.querySelectorAll(".topNav a").forEach((link) => {
+        if (link.href === window.location.href) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+    
+    /* This one is for dropdowns under the buttons */
+    document.querySelectorAll(".dropdown a").forEach((link) => {
+        if (link.href === window.location.href) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+</script>

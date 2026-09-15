@@ -1,0 +1,149 @@
+html {
+  background-color: #0F2218;
+  
+  background-image: none;
+  /* Old gradient background, keeping it just in case 
+  background: repeating-radial-gradient(circle at 50%,
+      rgba(44, 27, 29),
+      rgb(44, 27, 29) 5px,
+      rgb(34, 16, 16) 5px,
+      rgb(34, 16, 16) 7px);
+  */
+}
+
+.border {
+    border: 2px solid #f7f6f3;
+    box-shadow: 0 0 0 8px rgb(0, 0, 0), 0 0 0 10px #e5e4da;
+}
+
+.breadText {
+    text-align: left;
+    font-size: 16pt;
+    color: #33ff00;
+}
+
+.headText {
+    font-family: 'Nasalization';
+    color: #33ff00;
+}
+
+.subHead {
+    font-size: 40px;
+    font-family: 'Nasalization';
+    color: #40FFFF;
+    text-align: left;
+}
+
+.textHighlight {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    font-weight: 100;
+    background-color: #0F2218;
+}
+
+.textHighlightHeading {
+    font-family: "Didact Gothic";
+    font-size: 15pt;
+    color: black;
+    background-color: white;
+}
+
+/* This looks similar to hyperlinks, beware */
+.subtleHighlight {
+    color: #FF3EB5;
+    font-family: 'Alegreya';
+    text-shadow: 0px 1px #c51f85;
+    font-size: 15pt;
+    font-weight: 100;
+}
+/* Used when mentioning the basilisks or the full name of the church */
+.companyText {
+    color: white;
+    font-family: "JSL Ancient V1";  
+    font-size: 16pt;
+    padding: 1px;
+    background-color: #0F2218;
+    text-transform: uppercase;
+}
+.subtleChurchText {
+    color: #ffe900;
+    font-family: 'Courier';
+    text-shadow: 0px 1px #ffea00b1;
+    font-size: 14pt;
+    font-weight: 100;
+}
+
+/* Hyperlinks */
+a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffe900;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #FF3EB5;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* HALT! Annoying navbar stuff ahead! */
+.topNav {
+    background-color: black;
+    font-family: 'Didact Gothic';
+    font-weight: bolder;
+}
+
+.topNav b {
+    text-shadow: none;
+    color: #33ff00;
+    font-family: 'Nasalization';
+}
+
+.topNav>a {
+    color: #09bdea;
+    text-shadow: none;
+
+}
+
+.topNav a:hover{
+    text-decoration: none;
+}
+
+.topNav>a::after,
+.dropbtn a::after {
+    background-color: #09bdea;
+}
+
+.dropdown a {
+    color: #09bdea;
+    font-weight: 900;
+    text-shadow: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF3EB5;
+    color: #ffe900;
+}
+
+.dropdown .dropbtn {
+    color: #FF3EB5;
+    font-weight: 900;
+    text-shadow: none;
+}
+
+.dropdown-content {
+    background-color: black;
+}
+
+.topNav a.active,
+.dropbtn.active {
+    color: #ffe900;
+}
