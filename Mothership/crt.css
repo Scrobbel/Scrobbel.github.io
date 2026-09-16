@@ -129,9 +129,45 @@
   }
 }
 
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* rgba(18, 16, 16, 0.1); */
+  background: rgba(18, 16, 16, 0.01);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+
+}
+.crt::before {  
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+.crt {
+  animation: textShadow 1.6s infinite;
+}
+
+
+
+/* SCANLINES */
 .scanlines {
     overflow: hidden;
     position: relative;
+    
 }
 .scanlines:before,
 .scanlines:after {
@@ -184,6 +220,7 @@ div.scanlines {
 div .jpg {
     width: 100vw;
     height: 100vh;
+    overflow: auto;
     border: none;
 }
 .jpg {
@@ -194,37 +231,4 @@ div .jpg {
 body {
     position: relative;
     background: #1b1b1b;
-}
-
-
-.crt::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  /* rgba(18, 16, 16, 0.1); */
-  background: rgba(18, 16, 16, 0.01);
-  opacity: 0;
-  z-index: 2;
-  pointer-events: none;
-
-}
-.crt::before {  
-  content: " ";
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: 2;
-  background-size: 100% 2px, 3px 100%;
-  pointer-events: none;
-}
-.crt {
-  animation: textShadow 1.6s infinite;
 }

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/navBarSheet.css">
+    <link rel="stylesheet" href="/Mothership/mothership_style.css">
+    <link rel="stylesheet" href="/Mothership/crt.css">
+
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("/Mothership/motherBarReference.html");
+        });
+    </script>
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+    <title>SPELARE</title>
+</head>
+
+<body class="crt">
+    <div class="scanlines">
+        <div class="jpg">
+            <!-- Navbar, imported using JQuery above -->
+            <div id="includedContent"></div>
+            <!-- Line break into breadtext-->
+            <br>
+            <div class="headText">
+                PLAYER IMPROVEMENTS
+            </div>
+            <br>
+            <div class="border">
+                <!-- TEXT -->
+                <div class="breadText">
+                    <div class="subHead">
+                        PERKS
+                    </div>
+                    Perks are special, powerful abilities player characters can learn in the form of Perk Cards.
+                    They can only be learned during Shore Leave by:
+                    <ul>
+                        <li>The Warden awarding them.</li>
+                        <li>Converting 8 points of Stress.</li>
+                    </ul>
+                    Regardless, no more than 2 cards can be learned each Shore Leave.
+                    <br><br>
+                    Whenever a player would gain a Wound, they can instead choose to discard a Perk Card. A discarded
+                    talent is gone until learned again.
+                    <br>
+                    <strong>Regarding requirements:</strong>
+                    <ul>
+                        <li>HS refers to your High Score.</li>
+                        <li>Once you’ve gained a Perk Card you no longer need to meet its requirements, unless you
+                            re-learn it.</li>
+                    </ul>
+                </div>
+                <!-- PERK CARDS, arragned in a grid -->
+                <div class="breadText">
+                    <div class="subHead">
+                        PERK CARDS
+                    </div>
+                    <!-- two flexboxes to get our columns-->
+                    <div style="display: flex; flex-direction: row;">
+                        <!-- column 1-->
+                        <div style="display: flex; flex-direction: column; width: 50%">
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Thick-Skinned</span>
+                                <br>
+                                <strong>REQ: </strong>
+                                <br>
+                                You have a permanent 2 AP. Stacks with armor.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Dedicated</span>
+                                <br>
+                                <strong>REQ: </strong>
+                                <br>
+                                Pick one Stat to always roll [+] on. Then pick another to always roll [-] on.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Latent Psionics</span>
+                                <br>
+                                <strong>REQ: </strong>Sanity 30; not Android
+                                <br>
+                                You unlock latent psionic potential and can now learn Psionic Talents. Reduce each Stat
+                                by 1d10 and gain a Psionic Talent. This card cannot be discarded.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Battleworn</span>
+                                <br>
+                                <strong>REQ: </strong>Gained 2 Wounds or HS 6
+                                <br>
+                                Gain [+] on Panic Checks, Death Saves and Wound rolls against you.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">At Any Cost</span>
+                                <br>
+                                <strong>REQ: </strong>HS 2
+                                <br>
+                                If you fail a roll, you can gain +1 Minimum Stress to succeed instead. Critical fails
+                                are exempt.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Metallic Endoskeleton</span>
+                                <br>
+                                <strong>REQ: </strong>Android
+                                <br>
+                                +1 Max Wounds. Damage no longer carries over between Wounds.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">NAME</span>
+                                <br>
+                                <strong>REQ: </strong>
+                                <br>
+                                DESCRIPTION
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">NAME</span>
+                                <br>
+                                <strong>REQ: </strong>
+                                <br>
+                                DESCRIPTION
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">NAME</span>
+                                <br>
+                                <strong>REQ: </strong>
+                                <br>
+                                DESCRIPTION
+                            </div>
+                        </div>
+                        <!-- column 2-->
+                        <div style="display: flex; flex-direction: column; width: 50%">
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Resourceful</span>
+                                <br>
+                                <strong>REQ: </strong>Jury-Rigging
+                                <br>
+                                Whenever a non-ammo item would be expended (Stimpak, Battery, etc) it has a 30% chance
+                                of not doing so.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Martyr</span>
+                                <br>
+                                <strong>REQ: </strong>Theology
+                                <br>
+                                You can take damage for others within Close range, healing 1d5 Stress for the saved.
+                                Your eventual death does not trigger Panic Checks, instead it gives allies [+] on their
+                                next action.
+                                <br>
+                                When this card is discarded, if it’s to avoid a Death Save, you instantly heal back to
+                                your maximum.
+
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Hardy</span>
+                                <br>
+                                <strong>REQ: </strong>
+                                <br>
+                                +4 Max Health. You roll [+] on any roll to resist being infected or otherwise gaining a
+                                Condition.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Guns Blazing</span>
+                                <br>
+                                <strong>REQ: </strong>Marine or Firearms
+                                <br>
+                                Twice per session, before rolling, automatically succeed on a roll to use firearms.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Pep Talk</span>
+                                <br>
+                                <strong>REQ: </strong> HS 3
+                                <br>
+                                Once per session, during a moment of calm, give a pep talk to inspire your allies. Any
+                                who listen may roll Sanity [+] to reduce 1d5 Stress.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Cyberpsycho</span>
+                                <br>
+                                <strong>REQ: </strong>2 slots of Cyberware filled; 2 Cybermods installed
+                                <br>
+                                Gain [+] on all checks for 1d10 minutes. Afterwards, do a Cybermod Panic Check and roll
+                                1d10. Rolling under amount of uses this week turns you into a rampaging cyberpsycho.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">Herbalist</span>
+                                <br>
+                                <strong>REQ: </strong>Botany or Ecology or Rimwise
+                                <br>
+                                You roll Rest Saves with [+].
+                                <br>
+                                Once per session you can procure some sort of herbal remedy. Consuming it relieving 1d5
+                                Stress and gives [-] on all non-Sanity rolls for the same amount of hours.
+                            </div>
+                            <!-- PERK CARD TEMPLATE -->
+                            <div class="perkCard">
+                                <span class="textHighlightHeading">NAME</span>
+                                <br>
+                                <strong>REQ: </strong>
+                                <br>
+                                DESCRIPTION
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>
