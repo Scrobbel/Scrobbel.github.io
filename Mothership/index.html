@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/navBarSheet.css">
     <link rel="stylesheet" href="mothership_style.css">
     <link rel="stylesheet" href="crt.css">
-    
+
     <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
@@ -25,61 +25,88 @@
 
 <body class="crt">
     <div class="scanlines">
-    <!-- Navbar, imported using JQuery above -->
-    <div id="includedContent"></div>
+        <!-- Navbar, imported using JQuery above -->
+        <div id="includedContent"></div>
 
-    <!-- Line break into breadtext-->
-    <br>
-    <div class="headText">
-        MOTHERSHIP
-    </div>
-    <br>
-    <div class="border">
-        <!-- FRAMTIDEN -->
-        <div class="breadText">
-            <div class="subHead">
-                FRAMTIDEN
-            </div>
-            Året är 2461. Mänskligheten bor bland stjärnorna, och nya världar har koloniserats. Utomjordligt liv har upptäckts
-            på andra planeter, men inget lika avancerat som oss, och verkligen inga rymdfarande civilisationer.
-            <br>
-            Trots fantastiska uppfinningar som >warp-drive< och Androider är människan långt ifrån ett galaktiskt rike. 
-            Visserligen är det möjligt att färdas hundratals ljusår på endast några dagar, men färder som dessa är dyra
-            och för med sig risk. Det finns inget intergalaktiskt nätverk, och den teknologiska nivån varierar otroligt från 
-            system till system, sektor till sektor. 
-            <br>
-            Den enda formen av galaktisk lag och regering är <span class="companyText">BYRÅN</span>, och de finns <i>överallt</i>.
-            Varenda station och varenda skepp; varenda del av skrot och varenda planet; varenda måltid och varenda klädesplagg. 
-            ALLT, på ett eller annat vis, kommer från <span class="companyText">BYRÅN</span>. 
-             
-        </div>
-
-        <!-- Navigering -->
+        <!-- Line break into breadtext-->
         <br>
-        <div class="breadText">
-            <div class="subHead">
-                Navigering
-            </div>
-            Använd menyn högst upp för att navigera mellan sidor. På en sida lyder det generellt att text som <a
-                href="/MorkBorg/index.html">denna</a> är länkar,
-            om inte annat står.
-            <br>
-            Saker relaterade till kyrkan skrivs antingen i <span class="churchText">denna</span> text
-            eller i <span class="subtleChurchText">denna</span> text.
-            <br>
-            <div style="transform: rotate(-0.5deg);">
-                <span class="textHighlight" style="font-family: Inconsolata;">
-                    Världsinformation och sägner på hemsidan är en blandning av eget, funnet i officiella böcker, och fan-made
-                    supplement!
-                </span>
-            </div>
-            <span style="font-family: Courier; font-size: 11pt;">
-                (lycka till att använda denna hemsida på telefonen)
-            </span>
+        <div class="headText">
+            MOTHERSHIP
         </div>
-    </div>
-    <br>
-    <br>
+        <br>
+        <div class="border">
+            <br>
+            <!-- FRAMTIDEN -->
+            <div class="breadText">
+                <div class="subHead">
+                    FRAMTIDEN
+                </div>
+                Året är 2461. Mänskligheten bor bland stjärnorna, och nya världar har koloniserats.
+                Primitivt utomjordligt liv existerar, men inga rymdfarande civilisationer.
+                <br>
+                Trots fantastiska uppfinningar som <span class="textHighlight">hyperdrift motorer</span>
+                och <span class="textHighlight">androider</span> är människan långt ifrån ett galaktiskt
+                rike: Det är dyrt att träda in i hyperdrift, och det för med sig risk.
+                Kommunikation mellan sektorer är sällsynt, och den teknologiska nivån varierar otroligt från värld till
+                värld.
+                <br>
+                Välkommen till den bleka verkligheten av <span class="subtleHighlight">MOTHERSHIP</span>.
+                <!-- BYRÅN -->
+                <div class="breadText">
+                    <div class="subHead" style="color:#ff0707">
+                        BYRÅN
+                    </div>
+                    Den enda formen av galaktisk lag och regering är <span class="companyText">BYRÅN</span>, och de
+                    finns <i>överallt</i>.
+                    Varenda station och varenda skepp; varenda del av skrot och varenda planet; varenda måltid och
+                    varenda klädesplagg:
+                    ALLT, på ett eller annat vis, kommer från <span class="companyText">BYRÅN</span>.
+                </div>
+                <div class="subHead">
+                    TEKNOLOGI
+                </div>
+                Den nya teknologin är fantastisk och <i>klumpig</i>.
+                Gigantiska terminaler kräver tangentbord och kablar för att interagera med, och data skrivs ut på
+                minst sagt ointuitiva gränssnitt.
+                Det finns <span class="textHighlight">inga</span> touchskärmar, och man kan knappast be
+                en inbyggd AI att utföra instruktioner åt en. Allt sker manuellt.
+                <br><br>
+                <span class="smallHead">
+                    SÖNDRADE NÄTVERKET
+                </span>
+                <br>
+                Rymden är stor. Väldigt, väldigt stor.
+                Kostnaden av hyperdrift gör ett galaktiskt nätverk hopplöst.
+                Förr var solsystem enade i interstellära nätverk,
+                men detta bar med sig för stora säkerhetsrisker av AI som infekterade hela solsystem (se nedan).
+                <br>
+                Idag används <i>skärvor</i>, lokala nätverk som tillsammans spänner upp ett system. En rimligt stor
+                rymdstation
+                kan bestå av hundratals skärvor som enkelt kan isoleras ifall det blir infekterat.
+                <span class="companyText">BYRÅN</span> har infört ett protokoll som sköter signaler skickat mellan
+                skärvor - även från planet till planet -
+                som ingen vågar tacka nej till att använda. <span class="textHighlight">Ifrågasätt aldrig hur
+                    protokollet fungerar.</span>
+                <br><br>
+                <span class="smallHead">
+                    CYBERNETIK OCH AI
+                </span>
+                <br>
+                Nästan 70% av mänskligheten har en <span class="textHighlight">Slicksocket</span> installerad: Ett 
+                uttag antingen i tinningen eller nacken som ansluter till en liten dator i kraniumet. Dessa fungerar som
+                ens ID, bankkonto, brottsregister, CV, mm. <span class="companyText">BYRÅN</span> är snäll nog att betala för installation.
+                <br>
+                Det är tack vare slicksockets som AI är en sådan fara: De är bland de få som kan göra intrång, med dödliga konsekvenser.
+                <br>
+                Men, den vanliga människan är inte särskilt rädd för artificell intelligens. Androider existerar trots allt!
+                Nästan all annan cybernetik - proteser, minneslådor, organ - använder lägre-nivå AI för att underlätta
+                interagering mellan hjärna och cybernetik.
+            </div>
+
+
+
+        </div>
+
     </div>
 </body>
 
