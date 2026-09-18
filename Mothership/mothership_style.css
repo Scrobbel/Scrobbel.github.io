@@ -52,6 +52,11 @@ html {
     background-color: #0F2218;
 }
 
+strong {
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: -0.5rem
+}
+
 .textHighlightHeading {
     font-family: "Didact";
     font-size: 17pt;
@@ -72,15 +77,7 @@ html {
     font-family: "Inconsolata";  
     font-size: 18pt;
     padding: 1px;
-    background-color: #0F2218;
     text-transform: uppercase;
-}
-.subtleChurchText {
-    color: #ffe900;
-    font-family: 'Courier';
-    text-shadow: 0px 1px #ffea00b1;
-    font-size: 14pt;
-    font-weight: 100;
 }
 
 .perkCard{
@@ -109,6 +106,10 @@ a:hover {
 
 a:active {
     text-decoration: underline;
+}
+
+table, th, td {
+  border: 2px solid green;
 }
 
 /* HALT! Annoying navbar stuff ahead! */

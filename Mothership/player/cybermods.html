@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/navBarSheet.css">
+    <link rel="stylesheet" href="/Mothership/mothership_style.css">
+    <link rel="stylesheet" href="/Mothership/crt.css">
+
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("/Mothership/motherBarReference.html");
+        });
+    </script>
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+    <title>CYBERMODS</title>
+</head>
+
+<body class="crt">
+    <div class="scanlines">
+        <div class="jpg">
+            <!-- Navbar, imported using JQuery above -->
+            <div id="includedContent"></div>
+            <!-- Line break into breadtext-->
+            <br>
+            <div class="headText">
+                CYBERMODS
+            </div>
+            <br>
+            <!-- CYBERMODS -->
+            <div class="border">
+                <!-- INTRO -->
+                <div class="breadText">
+                    <div class="subHead">
+                        INTRO
+                    </div>
+                    There are two kinds of <strong>CYBERMODS (MODS): CYBERWARE</strong> and <strong>SLICKWARE</strong>:
+                    <br>
+                    Cyberware is cybernetic hardware that is physically installed and augments your body.
+                    <br>
+                    Slickware is software you install in your brain via a Slicksocket.
+                    <br><br>
+                    Every player has a certain number of <strong>SLOTS</strong> they can use to install mods. The
+                    tens-digit of your
+                    Strength is how many <strong>Cyberware SLOTS</strong> you have, while the tens-digit of your
+                    Intellect is how many
+                    <strong>Slickware SLOTS</strong> you have, provided a Slicksocket is installed.
+                </div>
+                <!-- ROGUE INTELLIGENCE-->
+                <div class="breadText">
+                    <div class="textHighlight">
+                        <div
+                            style="text-align: center; font-size: 20pt; font-weight: bold; color: #f7ecec; text-shadow: #ff0707 1px 0 10px;">
+                            DANGERS OF ROGUE INTELLIGENCE
+                        </div>
+                        Almost all Cybermods are fitted with their own Artificial Intelligence (AI) to help facilitate
+                        connection between host and device. Normally, a host need not worry about what these AIs get up
+                        to, and they are far from the level of sentience an Android would be. Despite this, the dangers
+                        of an AI going rogue <strong>always</strong> exists, see <strong>Mutations</strong>.
+                    </div>
+                </div>
+                <!-- INSTALLING AND MALFUNCTIONS-->
+                <div class="breadText">
+                    <div class="subHead">
+                        INSTALLING CYBERMODS
+                    </div>
+                    At a Chop Shop or Slickbay you can install Cyberware and Slickware, respectively. Outside of this,
+                    expect disadvantage on rolls, unless a professional is doing it.
+                    <br><br>
+                    <strong>Cyberware:</strong> Make a Body Save at [+]. Failure means its installed, but you gain a
+                    Malfunction.
+                    Critical Failure also gives a Mutation and you take Xd10 damage, where X is the amount of SLOTS
+                    being filled.
+                    <br><br>
+                    <strong>Slickware:</strong> Make a Sanity Save at [+]. Failure means its installed, but you gain a
+                    Malfunction.
+                    Critical Failure also gives a Mutation and you lose 1d10+1 Intellect.
+                    <br><br>
+                    <div class="smallHead">
+                        MALFUNCTIONS AND MUTATIONS
+                    </div>
+                    <strong>Malfunctions</strong> can be removed at a cost equal to 100 times the result rolled when
+                    gaining it.
+                    <br>
+                    <strong>Mutations</strong> occur when an AI does not properly integrate with the host. These are all
+                    edge-cases and
+                    have no set removal cost, but they usually require someone extremely skilled.
+
+                </div>
+            </div>
+            <br><br>
+            <!-- LIST OF MODS -->
+            <div class="border">
+                <div class="breadText">
+                    <div class="subHead">
+                        CYBERWARE
+                    </div>
+                    <table style="background-color: rgb(32, 48, 41);">
+                        <!-- HEADER -->
+                        <tr style="text-align: center; background-color: rgb(4, 86, 59);">
+                            <th>NAME</th>
+                            <th>DESCRIPTION</th>
+                            <th>SLOTS</th>
+                            <th>COST</th>
+                            <th>REQUIREMENTS</th>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>AUTOINJECTOR</strong></td>
+                            <td style="text-align: left;">Rows of hypodermic needles mounted along the spine that can be
+                                loaded with up to 4 Stimpaks. Stimpaks can be injected at any point, even when reduced
+                                to 0 health. Stimpaks not included.</td>
+                            <td>1</td>
+                            <td>25kcr</td>
+                            <td><strong>SPINAL RIG</strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>BLACK BOX</strong></td>
+                            <td style="text-align: left;">Stores all memories from point of installing. Memories can be
+                                watched with OGRE or projected with Holoprojector. Also stores uploaded data and
+                                installed Slickware. Can be placed into an Android frame.</td>
+                            <td>1</td>
+                            <td>20kcr</td>
+                            <td><strong>SLICKSOCKET</strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>CLOAKSKIN</strong></td>
+                            <td style="text-align: left;">Near-invisibility for 5 minutes, once per day. Installation
+                                can also change minor cosmetics, such as hiding scars or adding tattoos.</td>
+                            <td>2</td>
+                            <td>150kcr</td>
+                            <td><strong></strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>OGRE</strong></td>
+                            <td style="text-align: left;">Ocular Graphic Rendering Engine. A <strong>Bodycam</strong>
+                                and <strong>Heads Up
+                                    Display</strong> implanted in your optical nerve. Combined with a Slicksocket lets
+                                you connect to videofeeds in
+                                local space station networks, such as shops or ads.</td>
+                            <td>1</td>
+                            <td>25kcr</td>
+                            <td><strong></strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>PROJECTOR SHIELD</strong></td>
+                            <td style="text-align: left;">Arm-mounted device that projects a shield. Stops all
+                                high-speed projectiles. One use per battery, lasts for about 10 seconds.</td>
+                            <td>1</td>
+                            <td>12kcr</td>
+                            <td><strong></strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>REMOTE UPLINK</strong></td>
+                            <td style="text-align: left;"> Once per day sends a PDGP encrypted broadcast of user’s
+                                Black Box data to a secure backup site for future retrieval (or
+                                re-sleeving). Many services require an authorized next-of-kin.</td>
+                            <td>2</td>
+                            <td>2mcr</td>
+                            <td><strong>BLACK BOX</strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>SLICKSOCKET</strong></td>
+                            <td style="text-align: left;">Cranial input jack found on 50% of the galaxies population.
+                                Works as personal ID, bank account, as well as allowing for Slickware and certain
+                                Cyberware to be installed. Your personal connection to the digital world. </td>
+                            <td>0</td>
+                            <td>BUREAU PAYS<br><br>25kcr to remove</td>
+                            <td><strong></strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>SPINAL RIG</strong></td>
+                            <td style="text-align: left;">Mechanical rig built for assisted heavy-lifting. User gains 10
+                                Strength and 2 Health.</td>
+                            <td>1</td>
+                            <td>150kcr</td>
+                            <td><strong></strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>TERMINAL JACK</strong></td>
+                            <td style="text-align: left;">Port allowing transfer between electronic equipment, such as
+                                terminals or vehicles. Still requires an interface medium, like a keyboard. Can download
+                                data from linked systems or upload from a Black Box. Among the most essential tools for
+                                a techie.</td>
+                            <td>1</td>
+                            <td>1 000cr</td>
+                            <td><strong>SLICKSOCKET</strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>&Omega;-FRAME</strong></td>
+                            <td style="text-align: left;">A fully cybernetic war-armor integrated with your mind and
+                                skeleton, used by the <span class="companyText">BUREAUS</span> most dangerous
+                                mercenaries.
+                                <strong>+3 Cyberware SLOTS</strong> and <strong>AP</strong> 15.
+                                You can lift up to 500 kg and roll <strong>Strength</strong> and <strong>Combat</strong>
+                                at [+], but <strong>Cybermod Panic</strong> at
+                                [-].
+                                Each Shore Leave gain <strong>1d5 Minimum Stress</strong>.
+                                If <strong>AP</strong> is reduced to 0, die.
+                            </td>
+                            <td>0*</td>
+                            <td>1mcr</td>
+                            <td><strong>SPINAL RIG<br>60 BODY</strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>nam</strong></td>
+                            <td style="text-align: left;">desc</td>
+                            <td>1</td>
+                            <td>25kcr</td>
+                            <td><strong>req</strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>nam</strong></td>
+                            <td style="text-align: left;">desc</td>
+                            <td>1</td>
+                            <td>25kcr</td>
+                            <td><strong>req</strong></td>
+                        </tr>
+                        <!-- ITEM -->
+                        <tr style="text-align: center;">
+                            <td><strong>nam</strong></td>
+                            <td style="text-align: left;">desc</td>
+                            <td>1</td>
+                            <td>25kcr</td>
+                            <td><strong>req</strong></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>
