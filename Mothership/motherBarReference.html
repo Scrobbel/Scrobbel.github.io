@@ -1,6 +1,6 @@
 <!-- Navbar -->
 <div class="topNav">
-    <b class="crt">
+    <b class="crt" name="crt_filter">
         MOTHERSHIP
     </b>
     <a href="/index.html"> LÄMNA </a>
@@ -16,12 +16,7 @@
         </div>
     </div>
     
-    <!--
-    <button onclick="remove_crt(document.body)">
-        CRT
-    </button>
-    -->
-    
+
     <!-- KULTUR -->
     <!--
     <div class="dropdown">
@@ -34,6 +29,10 @@
     -->
 
     <a href="/Mothership/player/index.html">SPELARE</a>
+    <button onclick="remove_crt()">
+        CRT
+    </button>
+
 </div>
 
 <!-- We use a some scripts to highlight the current site we're on -->
@@ -55,19 +54,25 @@
     });
 
     /* and a script to disable the CRT filter */
-    function remove_crt(el){
-        if (el == document.body){
-            console.log("reached 1")
-            el.removeAttribute('crt')
-            console.log("reached 2")
-            if(el.childNodes[0].nodeType == 1)
-                var child = el.childNodes[0]
-                remove_crt(child)
+    function remove_crt(){
+        var crt = document.getElementsByName('crt_filter')
+        var scanlines = document.getElementsByName('scan_filter');
+        for(var i = 0; i<crt.length; i++){
+            if(crt[i].className == 'crt'){
+                crt[i].className = 'none'
             }
-        else{
-            console.log("reached 3")
-            el.removeAttribute('scanlines')
-            console.log("reached 4")
+            else{
+                crt[i].className = 'crt'
             }
+            
+        }
+        for(var i = 0; i<scanlines.length; i++){
+            if(scanlines[i].className == 'scanlines'){
+                scanlines[i].className = 'none'
+            }
+            else{
+                scanlines[i].className = 'scanlines'
+            }
+        }
     }
 </script>

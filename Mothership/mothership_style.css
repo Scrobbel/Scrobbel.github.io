@@ -112,6 +112,21 @@ table, th, td {
   border: 2px solid green;
 }
 
+button {
+    border: 4px solid #33ff00;
+    border-radius: 6px;
+    color: #ffe900;
+    text-align:center;
+    margin-top: 6px;
+    padding: 2px 4px;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+    float: left;
+    background-color: #020404;
+}
+
 /* HALT! Annoying navbar stuff ahead! */
 .topNav {
     background-color: black;
