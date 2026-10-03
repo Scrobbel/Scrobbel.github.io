@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/navBarSheet.css">
+    <link rel="stylesheet" href="/Mothership/mothership_style.css">
+    <link rel="stylesheet" href="/Mothership/crt.css">
+
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("/Mothership/motherBarReference.html");
+        });
+    </script>
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+    <title>SPELARE</title>
+</head>
+
+<body class="crt">
+    <div class="scanlines">
+        <div class="jpg">
+            <!-- Navbar, imported using JQuery above -->
+            <div id="includedContent"></div>
+            <!-- Line break into breadtext-->
+            <br>
+            <div class="headText">
+                BACKGROUNDS
+            </div>
+            <br>
+            <div class="border" style="max-width: 90%">
+                <!-- TEXT -->
+                <div class="breadText">
+                    <div class="subHead">
+                        REGULAR BACKGROUNDS
+                    </div>
+                    <table style="text-align: center; font-size: 13pt;">
+                        <tr style="background-color: rgb(4, 86, 59);">
+                            <th>BACKGROUND</th>
+                            <th>DESCRIPTION</th>
+                            <th>EFFECTS</th>
+                            <th>ATTRIBUTE EFFECTS</th>
+                        </tr>
+                        <tr>
+                            <td>ACTIVIST</td>
+                            <td>You do what you can to fight against the corporate
+                                regime, whether it is through bearing arms or through
+                                mutual aid. What caused you to fight against the
+                                system? What does your resistance typically look like?</td>
+                            <td>
+                                +1 permanent Minimum Stress.
+                                <br>
+                                <strong>TR:</strong> Once per session, choose to succeed a Panic
+                                Check and gain 1d5 Stress.
+                            </td>
+                            <td>+10 Fear or Sanity</td>
+                        </tr>
+                        <tr>
+                            <td>ANDROID ENTHUSIAST</td>
+                            <td>You've been around a lot of robots and artificial
+                                intelligence, be it out of fascination or upbringing.
+                                What triggered this interest in robotics? What do you
+                                see in Androids that you don’t in humans?</td>
+                            <td>
+                                Swap a Skill for Mechanical Repair. If you do, gain Robotics, Engineering, or
+                                Cybernetics.
+                                <br>
+                                <strong>TR:</strong>Don’t roll Fear saves at [-] when Close to
+                                allied Androids. Make a Panic check when an Android
+                                causes you harm or stress
+                            </td>
+                            <td>+10 Intellect, -5 to 2 Stats</td>
+                        </tr>
+                        <tr>
+                            <td>BROKE TRADER</td>
+                            <td>No, not a broker trader. You used to be a merchant, trader or salesman, but everything
+                                came crashing down.
+                                What led to your downfall? How did it lead to your current career?
+                            </td>
+                            <td>Roll twice on your loadout table and pick which to keep. Gain Archaeology or
+                                Linguistics.
+                                <br>
+                                <strong>TR:</strong> Roll Panic at [+] for as long as you have your trinket.
+                                If you Panic, you destroy the trinket as part of your roll.
+                            </td>
+                            <td>+10 Sanity, -5 Combat</td>
+                        </tr>
+                        <tr>
+                            <td>CONSCRIPTED</td>
+                            <td>There's a battle somewhere to be fought and you were
+                                selected to join the forces, willingly or otherwise.
+                                What role did you serve in military? Would you serve
+                                again? Why or why not?</td>
+                            <td>
+                                +2 permanent Minimum Stress.
+                                <br>
+                                Gain Military Training.
+                                <br>
+                                Gain a pulse-rifle, if you do remove any other firearms.
+                            </td>
+                            <td>+5 Body or Combat, -5 Sanity</td>
+                        </tr>
+                        <tr>
+                            <td>CORPO SHILL</td>
+                            <td>You've worked your entire life in corporate
+                                bureaucracy, climbing the endless ladder in hopes of
+                                catching that big break. What sort of work did you
+                                slave away at? How did your office treat you?</td>
+                            <td>Gain Computers or Mathematics
+                                <br>
+                                <strong>TR:</strong>Make a Panic check whenever you or an ally
+                                break any job rules or site regulations
+                            </td>
+                            <td>+5 Intellect, -5 Body or Sanity</td>
+                        </tr>
+                        <tr>
+                            <td>DISCIPLE</td>
+                            <td>During a time of confusion, you found a group searching
+                                for enlightenment that gave you a sense of purpose.
+                                What sort of faith did you discover? How may your faith
+                                contradict common world beliefs? </td>
+                            <td>Gain Mysticism
+                                <br>
+                                <strong>TR:</strong>Make a Sanity Save when questioned about your
+                                current faith by nonbelievers.
+                            </td>
+                            <td>+5 Intellect, +5 Fear or Sanity</td>
+                        </tr>
+                        <tr>
+                            <td>ENFORCER</td>
+                            <td>Your headstrong nature found you work in the security
+                                industry, whether in law enforcement or as a private
+                                body guard. How were you recruited for this line of
+                                work? How do you react to escalating threats?</td>
+                            <td>Swap a skill for Military Training, Firearms, or
+                                Hand-to-Hand Combat (Mandatory)
+                                <br>
+                                Start with a SMG or stun-baton
+                                <br>
+                                <strong>TR:</strong>Make a Panic check each time you suffer a
+                                Wound
+                            </td>
+                            <td>+5 Body or Fear</td>
+                        </tr>
+                        <tr>
+                            <td>HUSTLER</td>
+                            <td>Bribery, forgery, networks: you are always on the hunt
+                                for the best deal. What tactics do you rely on to get
+                                your way? What sort of connections do you know?</td>
+                            <td>Swap a skill for Rimwise
+                                <br>
+                                Gain 2 items that each cost 1kcr or less
+                            </td>
+                            <td>+5 Intellect or Speed, -10 Fear</td>
+                        </tr>
+                        <tr>
+                            <td>JAILBIRD</td>
+                            <td>You spent a chunk of your life behind bars, mixed
+                                among hardened criminals and innocent pleaders. What
+                                did you do to wind up in prison? How did you choose to
+                                get out?</td>
+                            <td>Gain Rimwise
+                                <br>
+                                +1 permanent Minimum Stress
+                            </td>
+                            <td>+5 to 1 Stat and Save, -5 to 1 Stat and Save</td>
+                        </tr>
+                        <tr>
+                            <td>PLANETEER</td>
+                            <td>You spent most of your life in a planetary ecosystem,
+                                enjoying its natural resources and life forms. What
+                                sort of scenery would you commonly witness? How did
+                                you find yourself living on a planet?</td>
+                            <td>Gain Ecology or Wilderness Survival
+                                <br>
+                                <strong>TR:</strong>Your lowest Save is made at [-] when in space
+                            </td>
+                            <td>+5 Body, -5 Sanity</td>
+                        </tr>
+                        <tr>
+                            <td>SCROUNGER</td>
+                            <td>Life has not been kind to you; circumstances have
+                                forced you to live hand-to-mouth on the streets. What
+                                forced you onto the streets? What lengths have you
+                                gone to for survival?</td>
+                            <td>+2 permanent Minimum Stress
+                                <br>
+                                Gain Rimwise
+                                <br>
+                                <strong>TR:</strong>Once per session, change a critical fail to a
+                                regular success and gain +2 permanent Minimum Stress
+                            </td>
+                            <td>+5 Strength or Speed, -5 Body</td>
+                        </tr>
+                        <tr>
+                            <td>SELF-STUDIED</td>
+                            <td>Sacrificing your free time and/or sleep, you dedicated
+                                time to perfecting your craft. What motivated you to
+                                stick with your studies? How did you go about your
+                                training?</td>
+                            <td>Gain a Master skill and a 15 000 + 1d5x1000 cr debt.
+                                <br>
+                                <strong>TR:</strong>Make a Panic Check at [+] when you fail a Stat check
+                                or Saving throw while using a Skill
+                            </td>
+                            <td>+5 to 1 Stat, -5 to all other Stats or Saves</td>
+                        </tr>
+                        <tr>
+                            <td>SERVICE WORKER</td>
+                            <td>You are one of the cogs in the system that keep the
+                                world running. You've learned to deal with all sorts
+                                in this social yet thankless line of work. What is
+                                your job? How do you react to unexpected kindness?</td>
+                            <td>+1 permanent Minimum Stress
+                                <br>
+                                Gain Linguistics
+                            </td>
+                            <td>+5 Sanity, +5 Fear</td>
+                        </tr>
+                        <tr>
+                            <td>SHIPLING</td>
+                            <td>The only life you've known until recently is that
+                                aboard generational and colony ships, having to learn
+                                how to navigate their over-engineered spaces. How did
+                                ship life treat you? How do you view the possibility
+                                of being on a planet?</td>
+                            <td>Gain Rimwise or Zero-G
+                                <br>
+                                <strong>TR:</strong>Make Speed checks at [-] when under gravity
+                                0.5G heavier than what you grew up in
+                            </td>
+                            <td>+10 Speed, -5 Body</td>
+                        </tr>
+                        <tr>
+                            <td>SOCIALITE</td>
+                            <td>You have only known the centre stage, be it literal or
+                                metaphorical. You have made a living showing what
+                                people wanted to see. What talents did you display to
+                                gain fans? How has celebrity life treated you?</td>
+                            <td>Gain Linguistics, Art, Theology, or Athletics
+                            </td>
+                            <td>+5 Intellect, Speed or Strength, -5 Sanity</td>
+                        </tr>
+                        <tr>
+                            <td>SPACE HAULER</td>
+                            <td>You've signed your life away to the stars and
+                                expansive void of space, contracted to pilot long-haul
+                                freighters. What made you choose to be distant from
+                                civilization? Where do you call home and why?</td>
+                            <td>Gain Piloting
+                                <br>
+                                <strong>TR:</strong>Make Fear saves at [-] when not in a ship or
+                                transport vessel
+                            </td>
+                            <td>+5 Strength, +5 Fear</td>
+                        </tr>
+                        <tr>
+                            <td>STUDENT</td>
+                            <td>You are still discovering your potential, putting
+                                yourself through formal studies to hone a skill. What
+                                made you choose your academic field? How well have you
+                                performed as a student?</td>
+                            <td>+1 permanent Minimum Stress
+                                <br>
+                                Gain 1 Expert Skill that uses a Trained skill you
+                                possess as its prerequisite
+                            </td>
+                            <td>+5 Intellect, -5 Combat, -5 to 1 Save</td>
+                        </tr>
+                        <tr>
+                            <td>(UN)RETIRED</td>
+                            <td>You've been in your line of work for decades, finally
+                                having made enough to retire. But not many can do what
+                                do. Why did you retire? What compelled you out of
+                                retirement?</td>
+                            <td><strong>Pick one:</strong> Gain 1 Trained Skill or 1 Expert Skill OR
+                                Start with an additional 2d5 x 1000 cr to spend
+                                <br>
+                                <strong>TR:</strong>Your lowest Stat and Save are made at [-]
+                            </td>
+                            <td>+10 to 1 Stat and Save, -5 to everything else</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div class="subHead">
+                        ANDROID BACKGROUNDS
+                    </div>
+                    Androids have been revised into unique set of Backgrounds
+                    that recontextualize their existence and role in the
+                    Mothership world. They are a standard robotic assembly
+                    that functions differently from humans.
+                    <br>
+                    They operate on different rules. Androids:
+                    <ul>
+                        <li>Don’t need to breathe, sleep, eat, or drink.</li>
+                        <li>Have [-] on all rolls if not charged for 1d5+5 hours
+                            after 3 days before going unconscious in 1d5 days.</li>
+                        <li>Can recover 1d10 Health during Short Term Recovery by
+                            making an Intellect check for repairs.</li>
+                        <li>Are immune to radiation.</li>
+                        <li>Make a Body Save when taking electrical damage or is Stunned for 1 round.</li>
+                        <li><strong>TR:</strong>Close non-Android allies make Fear Saves at [-]</li>
+                    </ul>
+                    <table style="text-align: center; font-size: 13pt;">
+                        <tr style="background-color: rgb(4, 86, 59);">
+                            <th>BACKGROUND</th>
+                            <th>DESCRIPTION</th>
+                            <th>EFFECTS</th>
+                            <th>ATTRIBUTE EFFECTS</th>
+                        </tr>
+                        <tr>
+                            <td>COGNITIVE</td>
+                            <td>As a data processing unit, you are often deployed to
+                                assist with specialty work, like a portable terminal.
+                                What sort of work have you assisted in? What
+                                confidential secrets do you hold?</td>
+                            <td>Swap a Skill to Chemistry, Computers, or
+                                Mathematics (Mandatory)
+                            </td>
+                            <td>+10 Intellect, -10 to all other Stats,
+                                +10 Sanity, +20 Fear, -15 Body</td>
+                        </tr>
+                        <tr>
+                            <td>DISCONTINUED</td>
+                            <td>Once the standard, you are the last of a pulled line
+                                of Android models. Why do you no longer receive
+                                support? How has your frame been maintained now?</td>
+                            <td>+1 permanent Minimum Stress
+                                <br>
+                                Swap a Skill for 1 Trained Skill
+                            </td>
+                            <td>+5 to 1 Stat, -5 to all other Stats, +30 Fear</td>
+                        </tr>
+                        <tr>
+                            <td>NEURAL SLEEVE</td>
+                            <td>Once human, you've taken upon a very costly procedure,
+                                perhaps putting you into debt, to upload your
+                                consciousness to a robotic body. Why did you need to
+                                shed your human body? Do you recall your past life?</td>
+                            <td>+2 permanent Minimum Stress
+                                <br>
+                                Gain 1 Trained Skill
+                            </td>
+                            <td>+5 Strength, +10 Body, -5 Fear or Sanity</td>
+                        </tr>
+                        <tr>
+                            <td>SYNTHETIC</td>
+                            <td>Designed as a cheap replacement for human labour and
+                                or companionship, you have the uncanny appearance of a
+                                human while following internal programming. What is
+                                the purpose of your model? Are you corporate owned or
+                                built by an independent creator?</td>
+                            <td>Gain 1 Trained Skill
+                            </td>
+                            <td>+10 to 1 Stat, -5 to 1 Stat, +30 Fear, -10 Sanity</td>
+                        </tr>
+                        <tr>
+                            <td>UTILITY</td>
+                            <td>Designed for function over aesthetics, your robotic
+                                frame is often used in place of humans for dangerous
+                                or laborious work. What sort of work are you designed
+                                for? Have you gone against your programming?</td>
+                            <td>Swap a Skill for Athletics, Military Training, or
+                                Industrial Equipment (Mandatory)
+                                <br>
+                                +1 Max Wounds
+                            </td>
+                            <td>+10 Combat, Strength or Speed, -5 to all other Stats, +30 Fear Save, -15 Sanity Save</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>

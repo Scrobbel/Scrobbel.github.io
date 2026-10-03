@@ -15,6 +15,13 @@
             <a href="/Mothership/sektor_mona/">HEFAISTOS</a>
         </div>
     </div>
+    
+    <!--
+    <button onclick="remove_crt(document.body)">
+        CRT
+    </button>
+    -->
+    
     <!-- KULTUR -->
     <!--
     <div class="dropdown">
@@ -46,4 +53,21 @@
             link.setAttribute("aria-current", "page");
         }
     });
+
+    /* and a script to disable the CRT filter */
+    function remove_crt(el){
+        if (el == document.body){
+            console.log("reached 1")
+            el.removeAttribute('crt')
+            console.log("reached 2")
+            if(el.childNodes[0].nodeType == 1)
+                var child = el.childNodes[0]
+                remove_crt(child)
+            }
+        else{
+            console.log("reached 3")
+            el.removeAttribute('scanlines')
+            console.log("reached 4")
+            }
+    }
 </script>
