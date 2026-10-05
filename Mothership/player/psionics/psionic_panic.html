@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/navBarSheet.css">
+    <link rel="stylesheet" href="/Mothership/mothership_style.css">
+    <link rel="stylesheet" href="/Mothership/crt.css">
+
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("/Mothership/motherBarReference.html");
+        });
+    </script>
+    <style>
+        ol {
+            width: 90%;
+            margin: auto;
+        }
+
+        ol li {
+            padding: 3px;
+            border: 2px solid green;
+            
+        }
+        li::marker{
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    </style>
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+    <title>PSIONICS</title>
+</head>
+
+<body class="crt" name="crt_filter">
+    <div class="scanlines" name="scan_filter">
+        <div class="jpg">
+            <!-- Navbar, imported using JQuery above -->
+            <div id="includedContent"></div>
+            <!-- Line break into breadtext-->
+            <br>
+            <div class="headText">
+                PSIONIC PANIC TABLE
+            </div>
+            <br><br>
+            <!-- TABLE -->
+            <div class="border">
+                <div class="breadText">
+                    <ol>
+                        <li><strong>COLD SWEATS.</strong>
+                            Just a minor inconvenience.
+                        </li>
+                        <li><strong>BLOODSHOT EYES.</strong>
+                            Lasts one day. Friendly players gain 1 Stress.
+                        </li>
+                        <li><strong>VOMITING.</strong>
+                            You and all friendly players present gain 1 Stress. You have [-]
+                            on everything for one round.
+                        </li>
+                        <li><strong>EXCESSIVE NOSEBLEED.</strong>
+                            Gain 2 Stress and permanently raise Mini-
+                            mum Stress by 1. All Close friendly players gain 2 Stress.
+
+                        </li>
+                        <li><strong>SLURRED SPEECH.</strong>
+                            Your speech gets garbled until 6 hours of rest. It is eerily
+                            off-putting.
+                        </li>
+                        <li><strong>BLURRED VISION.</strong>
+                            [-] on all sight-dependent acts until rested for at least 6 hours.
+                        </li>
+                        <li><strong>DEAFNESS</strong>
+                            You lose all hearing until 6 hours of rest.
+                        </li>
+                        <li><strong>NAUSEA.</strong>
+                            [-] on all Body Saves until 6 hours of rest.
+                        </li>
+                        <li><strong>VERTIGO.</strong>
+                            [-] on all physical actions until 6 hours of rest.
+                        </li>
+
+                        <!--10 to 20 -->
+                        <li><strong>FATIGUED.</strong>
+                            [-] on all rolls until until 6 hours of rest.
+                        </li>
+                        <li><strong>CRIPPLING HEADACHE.</strong>
+                            [-] on all rolls for 1d5 days.
+                            Permanently raise Minimum Stress by 1.
+                        </li>
+                        <li><strong>TREMORS.</strong>
+                            Gain <strong>Condition:</strong> Psionic Checks will cause heavy trem-
+                            bling. Close friendly players gain 1 Stress every time.
+
+                        </li>
+                        <li><strong>BLACKOUTS.</strong>
+                            Gain <strong>Condition:</strong> failed Psionic Checks cause memory black-
+                            outs. Previous 20 minutes are blank.
+                        </li>
+                        <li><strong>NEURAL BURNOUT.</strong>
+                            Gain <strong>Condition:</strong> all Psionic Checks cost an
+                            additional 2 Stress.
+
+                        </li>
+                        <li><strong>PARALYSIS.</strong>
+                            Loss of all motor functions for 1d5 hours. Gain 1 Stress for
+                            each hour.
+                        </li>
+                        <li><strong>MICROWAVE BLAST.</strong>
+                            You and everyone Close suffers 2d10 damage (Fire/
+                            Explosive). Friendly players make a Panic Check.
+                        </li>
+                        <li><strong>AUTO-IMMUNE DISORDER.</strong>
+                            Gain <strong>Condition:</strong> Psionic Checks are at
+                            [-] and all failures permanently lower relevant Save by 1 each time.
+                        </li>
+                        <li><strong>COGNITIVE REJECTION.</strong>
+                            Discard all Psionic Cards, including Latent Psionics. For each card, lose 2 in every Stat
+                            and Save.
+                        </li>
+                        <li><strong>OVERLOAD.</strong>
+                            Your mind burns up. <strong>Death Save.</strong>
+                        </li>
+                        <li><strong>SOULRIPPER.</strong>
+                            <i>Something</i> melds with your soul and takes over. You are now a (hostile) psychic avatar
+                            controlled by the Warden. Roll a new character.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <br>
+            <br>
+</body>
+
+</html>
