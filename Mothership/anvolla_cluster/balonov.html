@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/navBarSheet.css">
+    <link rel="stylesheet" href="/Mothership/mothership_style.css">
+    <link rel="stylesheet" href="/Mothership/crt.css">
+
+    <!-- JQuery, basically only used to import the NavBar from a file, allowing me to edit the NavBar in all files at once -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#includedContent").load("/Mothership/motherBarReference.html");
+        });
+    </script>
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+    <title>ANVOLLA</title>
+</head>
+
+<body class="crt" name="crt_filter">
+    <div class="scanlines" name="scan_filter">
+        <div class="jpg">
+            <!-- Navbar, imported using JQuery above -->
+            <div id="includedContent"></div>
+            <!-- Line break into breadtext-->
+            <br>
+            <div class="headText">
+                BALONOV
+            </div>
+            <br>
+            <div class="border">
+                <!-- info sheet -->
+                <div class="breadText" style="display:flex; flex-direction: row;">
+                    <ul>
+                        <li><strong>Surface:</strong>Terrestrial</li>
+                        <li><strong>Size:</strong>Earth-Sized Planet</li>
+                        <li><strong>Atmosphere:</strong>Terraformed</li>
+
+                    </ul>
+                    <ul>
+                        <li><strong>Climate:</strong>Arid</li>
+                        <li><strong>Population:</strong>Millions</li>
+                        <li><strong>Controlled By:</strong>Corporation (Seer Makrosystem)</li>
+                    </ul>
+                </div>
+                <!-- blurb -->
+                <div class="breadText">
+                    <span class="textHighlight">Balonov</span> was a mining colony. The primary resources have
+                    been
+                    extracted, leaving a decaying post-industrial ruin stricken with
+                    extreme poverty. Much of the population lives in the sprawling
+                    industrial ruins of the Downport City (Markhamn 01).
+                </div>
+
+                <div class="breadText">
+                    <div class="subHead">
+                        AMENITIES AND GOODS
+                    </div>
+                    The following is currently available to purchase during shore-leave:
+                    <table style="text-align: center; font-size: 13pt;">
+                        <tr style="background-color: rgb(4, 86, 59);">
+                            <th>ITEM</th>
+                            <th>DESCRIPTION</th>
+                            <th>COST</th>
+                            <th>STOCK</th>
+                            <th>LEGAL</th>
+                        </tr>
+                        <tr>
+                            <td>AMMO</td>
+                            <td>Ammo for generic weapons. Non-interchangable.</td>
+                            <td>75 cr</td>
+                            <td>N/A</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>INCENDIARY AMMO</td>
+                            <td>Target makes Body Save or catches on fire for 2d10 damage per round.</td>
+                            <td>1000 cr</td>
+                            <td>8</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>STIMPAk</td>
+                            <td>Cures cryosickness, reduces Stress by 1, restores 1d10 Health and grants [+] to all
+                                rolls for 1d10 min. Roll 1d10, if you roll under the amount of doses you’ve taken the
+                                past 24 hours, make a Death Save.
+                            </td>
+                            <td>1250 cr</td>
+                            <td>10</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>ADVANCED BATTLE DRESS</td>
+                            <td>Damage Reduction: 3
+                                Includes: short-range comms, body cam, headlamp, HUD, exoskeletal weave (Strength Checks
+                                [+]), radiation shielding. [-] on Speed Checks.
+                            </td>
+                            <td>15 kcr</td>
+                            <td>1</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>EXOLOADER</td>
+                            <td> Open-air mechanical exoskeleton used for heavy lifting (up to 5000kg). Loader claws
+                                deal 1 Wound. User can
+                                only wear Standard Crew Attire or Standard Battle Dress while operating. Battery
+                                operated (48 hours of use).</td>
+                            <td>80 kcr</td>
+                            <td>1</td>
+                            <td>LICENSE</td>
+                        </tr>
+                        <tr>
+                            <td>BIOSCANNER</td>
+                            <td>Long Range. Allows the user to scan for signs of life. Can tell the location of signs of
+                                life, but not what that life
+
+                                is. Blocked by some materials at the Warden’s discretion.</td>
+                            <td>3000 cr</td>
+                            <td>3</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>AUTOMED (5x)</td>
+                            <td>Nanotech pills that assist your body in repairing Damage by granting Advantage to Body
+                                Saves meant to repel
+
+                                disease and poison, as well as attempts to heal from rest.</td>
+                            <td>1500 cr</td>
+                            <td>5</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>VACCSUIT</td>
+                            <td>Designed for outer space operations. 12 hours of O2 per tank. 3 AP. Includes short-range
+                                comms, headlamp, and radiation
+                                shielding. Decompression within 1d5 rounds if punctured. [-] on Speed Checks.</td>
+                            <td>10 kcr</td>
+                            <td>2</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>PATCH KIT (3x)</td>
+                            <td>Repairs punctured and torn vaccsuits, restoring their space readiness. Patched vaccsuits
+                                have an AP of 1.</td>
+                            <td>250 cr</td>
+                            <td>4</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>FANCY CLOTHING</td>
+                            <td>Makes you look and feel exquisite. Suit and tie; Dress or jumpsuit; Shirt and vest; etc
+                            </td>
+                            <td>100 cr</td>
+                            <td>30</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>BESPOKE CLOTHING</td>
+                            <td>Designed to fit you and only you. Designed by Mr. Bespoke to your exact specifications.
+                                Takes 4 weeks from
+                                first meeting to delivering.
+                            </td>
+                            <td>50 kcr</td>
+                            <td>N/A</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>ELECTRONIC TOOL SET</td>
+                            <td>A full set of tools for doing detailed repair or construction work on electronics.</td>
+                            <td>100 kcr</td>
+                            <td>Enough</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>PORTABLE COMPUTER TERMINAL</td>
+                            <td>Flat computer monitor, keyboard and interface which allows the user to hack into
+                                pre-existing computers and
+                                networks, as well as perform standard computer tasks.</td>
+                            <td>1500 cr</td>
+                            <td>N/A</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>SMART-LINK ADD ON</td>
+                            <td>Grants remote viewing, recording, and operation of a ranged weapon as well as +5 DMG to
+                                the weapon. Needs a HUD or OGRE to connect.</td>
+                            <td>10 kcr</td>
+                            <td>2</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>ORGANIC PET</td>
+                            <td>Small to medium-sized organic pet animal. Larger or rare pets cost 50 kcr more. Ask
+                                Warden for stats and more info.</td>
+                            <td>50 kcr</td>
+                            <td>N/A</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>SYNTHETIC PET</td>
+                            <td>Small to medium-sized synthetic pet animal. Larger or rare pets cost 50 kcr more. Ask
+                                Warden for stats and more info.</td>
+                            <td>15 kcr</td>
+                            <td>N/A</td>
+                            <td>YES</td>
+                        </tr>
+                        <tr>
+                            <td>DYLIX GATK90
+                                MINIGUN</td>
+                            <td>Long range. 4d10 (AA) damage, Gunshot [+] Wound.
+                                <strong>Heavy</strong> and <strong>Two-Handed</strong>.
+                                Track ammo with a rolldown
+                                d20, starting at 20. Each
+                                attack, roll down the d20 by
+                                d10. It runs out of ammo
+                                when the d10 would go to 0
+                                or below. Military Training
+                                gives [+] to this roll.
+                            </td>
+                            <td>50 kcr</td>
+                            <td>1</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td>CHERNOV MW-1 DUAL MICROWAVE GUNS</td>
+                            <td>Experimental battery-powered weapon. 
+                                Two hand-held guns (Close range. 1d10 (AA), Fire Wound, 4 shots) that can be combined into one bigger weapon:
+                                Close range. 3d10 (AA), Fire Wound [+], 2 shots. 
+                                Don't roll to hit, instead all targets in a 3-meter line roll Body Saves to avoid. 
+                                For each round fired in succession, cumulative 1-in-10 chance weapon explodes. 
+                            </td>
+                            <td>250 kcr</td>
+                            <td>1</td>
+                            <td>NO</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>
